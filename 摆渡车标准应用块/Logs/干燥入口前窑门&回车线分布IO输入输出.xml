@@ -1,0 +1,7 @@
+<?xml version="1.0" standalone="no"?>
+<?xml-stylesheet type='text/xsl' href='MassDataHandlerLogFile.xsl'?>
+<LogFile titleName="干燥入口前窑门&amp;回车线分布IO输入输出.xml" projectName="E:\山东西海岸新材料有限公司V1.0\PLC数据文件\窑炉柜数据\干燥入口前窑门&amp;回车线分布IO输入输出.xlsx" typeText="类型" messageText="消息" timeText="时间">
+  <LogEntry type="Error" dateTime="12:57:42">
+    <Message>工作表 "PLC Tags" 没有所需格式。</Message>
+  </LogEntry>
+</LogFile>

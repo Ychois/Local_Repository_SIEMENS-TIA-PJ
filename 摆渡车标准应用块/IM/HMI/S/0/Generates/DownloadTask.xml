@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DownloadTask>
+  <ProjectInfo
+    DeviceVersion="17.0.0.0"
+    CreationTime="2025-01-03 03:03:03 (UTC)"
+    Runtime="SMART"
+    RtProjectName="山东西海岸新材料有限公司V5.9.出入口数据看板[KTP1200 Basic PN]"
+    RtProjectFolderName="山东西海岸新材料有限公司V5.9.出入口数据看板[KTP1200 Basic PN]"
+    DeviceType="KTP1200_Basic"
+    DisplayOrientation="0"
+    RTReleaseNo="17.0.0.0"
+    ImageReleaseNo="17.0.0.0"
+    RTCV="17.0.0.0"
+    PRCV="17.0.0.0"
+    FirmwareFileName="KTP1200\17.0.0.0\KTP1200_V17_00_00_00.fwf"
+    RuntimeFileName="KTP1200\17.0.0.0\KTP1200_V17_00_00_00.fwf"
+    RuntimeAddonFolderName="KTP1200" />
+  <FullDownload>pdata.srt</FullDownload>
+  <FullDownload
+    type="ADMINDATA">pdata.pwx</FullDownload>
+  <FullDownload>pdata.ORIE.cnk</FullDownload>
+  <FullDownload>pdata.ETH0.cnk</FullDownload>
+</DownloadTask>

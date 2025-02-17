@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ISO15745Profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.profibus.com/GSDML/2003/11/DeviceProfile ..\XSD\GSDML-DeviceProfile-V2.32.xsd" xmlns="http://www.profibus.com/GSDML/2003/11/DeviceProfile">
+    <ProfileHeader>
+        <ProfileIdentification>PROFINET Device Profile</ProfileIdentification>
+        <ProfileRevision>1.00</ProfileRevision>
+        <ProfileName>Device Profile for PROFINET Devices</ProfileName>
+        <ProfileSource>PROFIBUS Nutzerorganisation e. V. (PNO)</ProfileSource>
+        <ProfileClassID>Device</ProfileClassID>
+        <ISO15745Reference>
+            <ISO15745Part>4</ISO15745Part>
+            <ISO15745Edition>1</ISO15745Edition>
+            <ProfileTechnology>GSDML</ProfileTechnology>
+        </ISO15745Reference>
+    </ProfileHeader>
+    <ProfileBody>
+        <DeviceIdentity VendorID="0x01E3" DeviceID="0x3100">
+            <InfoText TextId="HJ5200_VEND_IDNT"/>
+            <VendorName Value="Blueone"/>
+        </DeviceIdentity>
+        <DeviceFunction>
+            <Family MainFamily="I/O" ProductFamily="Remote/IO"/>
+        </DeviceFunction>
+        <ApplicationProcess>
+            <DeviceAccessPointList>
+                <DeviceAccessPointItem ID="DAP1" PNIO_Version="V2.32" RequiredSchemaVersion="V2.31" PhysicalSlots="0..11" FixedInSlots="0" ModuleIdentNumber="0x00000001" MinDeviceInterval="256" ImplementationType="hj5203-10 IO device" DNS_CompatibleName="hj5203-10" ExtendedAddressAssignmentSupported="true" AddressAssignment="DCP" ObjectUUID_LocalIndex="1" MultipleWriteSupported="true" SharedDeviceSupported="true" DeviceAccessSupported="true" MaxSupportedRecordSize="4096" NameOfStationNotTransferable="true" ParameterizationSpeedupSupported="false" LLDP_NoD_Supported="true" ResetToFactoryModes="2" CheckDeviceID_Allowed="true" PowerOnToCommReady="1500">
+                    <ModuleInfo CategoryRef="ID_Blueone_REMIO">
+                        <Name TextId="HJ5200_MO_ID"/>
+                        <InfoText TextId="HJ5200_MO_INFO_ID"/>
+                        <VendorName Value="Blueone"/>
+                        <OrderNumber Value="HJ5200-PN"/>
+                    </ModuleInfo>
+                    <CertificationInfo ConformanceClass="B" ApplicationClass="" NetloadClass="I"/>
+                    <SubslotList>
+                        <SubslotItem SubslotNumber="32768" TextId="HJ5200_Subslot_8000"/>
+                        <SubslotItem SubslotNumber="32769" TextId="HJ5200_Subslot_8001"/>
+                        <SubslotItem SubslotNumber="32770" TextId="HJ5200_Subslot_8002"/>
+                        <SubslotItem SubslotNumber="32771" TextId="HJ5200_Subslot_8003"/>
+                    </SubslotList>
+                    <IOConfigData MaxInputLength="1440" MaxOutputLength="1440"/>
+                    <UseableModules>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_DI_ID" FixedInSlots="1"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_DO_ID" FixedInSlots="2"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_1" FixedInSlots="3"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_2" FixedInSlots="4"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_3" FixedInSlots="5"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_4" FixedInSlots="6"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MEXT1_DI_ID" FixedInSlots="7"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MEXT1_DO_ID" FixedInSlots="8"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MEXT2_DI_ID" FixedInSlots="9"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MEXT2_DO_ID" FixedInSlots="10"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_ALARM_ID" FixedInSlots="11"/>
+                    </UseableModules>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="DAP1" SubmoduleIdentNumber="0x0001" MayIssueProcessAlarm="false">
+                            <IOData/>
+                            <ModuleInfo>
+                                <Name TextId="HJ5200_MO_ID"/>
+                                <InfoText TextId="HJ5200_MO_INFO_ID"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                    <SystemDefinedSubmoduleList>
+                        <InterfaceSubmoduleItem ID="HJ5200_ID_IF" TextId="HJ5200_ID_IF" SubslotNumber="32768" SubmoduleIdentNumber="0x0F00" SupportedRT_Classes="RT_CLASS_1" SupportedProtocols="SNMP;LLDP" SupportedMibs="MIB2" NetworkComponentDiagnosisSupported="true" PTP_BoundarySupported="true" DCP_BoundarySupported="true" DCP_HelloSupported="true">
+                            <ApplicationRelations StartupMode="Advanced;Legacy" NumberOfAR="2">
+                                <TimingProperties PreferredSendClock="128" SendClock="32 64 128" ReductionRatio="1 2 4 8 16 32 64 128 256 512" ReductionRatioPow2="2 4 8 16 32 64 128 256 512"/>
+                            </ApplicationRelations>
+                            <MediaRedundancy SupportedRole="Client"/>
+                        </InterfaceSubmoduleItem>
+                        <PortSubmoduleItem ID="HJ5200_ID_IF_P1" TextId="HJ5200_ID_IF_P1" SubslotNumber="32769" SubmoduleIdentNumber="0x0F01" MAUTypes="16" CheckMAUTypeSupported="true" PortDeactivationSupported="true" LinkStateDiagnosisCapability="Up+Down" SupportsRingportConfig="true" IsDefaultRingport="true">
+                            <MAUTypeList>
+                                <MAUTypeItem Value="16" AdjustSupported="true"/>
+                            </MAUTypeList>
+                        </PortSubmoduleItem>
+                        <PortSubmoduleItem ID="HJ5200_ID_IF_P2" TextId="HJ5200_ID_IF_P2" SubslotNumber="32770" SubmoduleIdentNumber="0x0F02" MAUTypes="16" CheckMAUTypeSupported="true" PortDeactivationSupported="true" LinkStateDiagnosisCapability="Up+Down" SupportsRingportConfig="true" IsDefaultRingport="true">
+                            <MAUTypeList>
+                                <MAUTypeItem Value="16" AdjustSupported="true"/>
+                            </MAUTypeList>
+                        </PortSubmoduleItem>
+                        <PortSubmoduleItem ID="HJ5200_ID_IF_P3" TextId="HJ5200_ID_IF_P3" SubslotNumber="32771" SubmoduleIdentNumber="0x0F03" MAUTypes="16" CheckMAUTypeSupported="true" PortDeactivationSupported="true" LinkStateDiagnosisCapability="Up+Down" SupportsRingportConfig="true" IsDefaultRingport="true">
+                            <MAUTypeList>
+                                <MAUTypeItem Value="16" AdjustSupported="true"/>
+                            </MAUTypeList>
+                        </PortSubmoduleItem>
+                    </SystemDefinedSubmoduleList>
+                </DeviceAccessPointItem>
+            </DeviceAccessPointList>
+            <ModuleList>
+                <ModuleItem ID="HJ3200_DI_ID" ModuleIdentNumber="0x00000020">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_DI_NAME"/>
+                        <InfoText TextId="HJ3200_DI_INFO"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUB_DI_ID" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUB_DI_DATA" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUB_DI_NAME"/>
+                                <InfoText TextId="HJ3200_SUB_DI_INFO"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_DO_ID" ModuleIdentNumber="0x00000021">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_DO_NAME"/>
+                        <InfoText TextId="HJ3200_DO_INFO"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUB_DO_ID" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Output>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUB_DO_DATA" UseAsBits="true"/>
+                                </Output>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUB_DO_NAME"/>
+                                <InfoText TextId="HJ3200_SUB_DO_INFO"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_1" ModuleIdentNumber="0x000003E8">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_1"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_1"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_1" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_1" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_1"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_1"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_2" ModuleIdentNumber="0x000003E9">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_2"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_2"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_2" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_2" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_2"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_2"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_3" ModuleIdentNumber="0x000003EA">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_3"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_3"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_3" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_3" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_3"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_3"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_4" ModuleIdentNumber="0x000003EB">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_4"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_4"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_4" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Output>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_4" UseAsBits="true"/>
+                                </Output>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_4"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_4"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MEXT1_DI_ID" ModuleIdentNumber="0x00000520">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MEXT1_DI_NAME"/>
+                        <InfoText TextId="HJ3200_MEXT1_DI_INFO"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_MEXT1_SUB_DI_ID" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_MEXT1_SUB_DI_DATA" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_MEXT1_SUB_DI_NAME"/>
+                                <InfoText TextId="HJ3200_MEXT1_SUB_DI_INFO"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MEXT1_DO_ID" ModuleIdentNumber="0x00000521">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MEXT1_DO_NAME"/>
+                        <InfoText TextId="HJ3200_MEXT1_DO_INFO"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_MEXT1_SUB_DO_ID" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Output>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_MEXT1_SUB_DO_DATA" UseAsBits="true"/>
+                                </Output>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_MEXT1_SUB_DO_NAME"/>
+                                <InfoText TextId="HJ3200_MEXT1_SUB_DO_INFO"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MEXT2_DI_ID" ModuleIdentNumber="0x00000620">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MEXT2_DI_NAME"/>
+                        <InfoText TextId="HJ3200_MEXT2_DI_INFO"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_MEXT2_SUB_DI_ID" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_MEXT2_SUB_DI_DATA" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_MEXT2_SUB_DI_NAME"/>
+                                <InfoText TextId="HJ3200_MEXT2_SUB_DI_INFO"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MEXT2_DO_ID" ModuleIdentNumber="0x00000621">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MEXT2_DO_NAME"/>
+                        <InfoText TextId="HJ3200_MEXT2_DO_INFO"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_MEXT2_SUB_DO_ID" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Output>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_MEXT2_SUB_DO_DATA" UseAsBits="true"/>
+                                </Output>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_MEXT2_SUB_DO_NAME"/>
+                                <InfoText TextId="HJ3200_MEXT2_SUB_DO_INFO"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_ALARM_ID" ModuleIdentNumber="0x0000001F">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_ALARM_NAME"/>
+                        <InfoText TextId="HJ3200_ALARM_INFO"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUB_ALARM_ID" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="3" TextId="HJ3200_SUB_ALARM_DATA" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUB_ALARM_NAME"/>
+                                <InfoText TextId="HJ3200_SUB_ALARM_INFO"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+            </ModuleList>
+            <CategoryList>
+                <!--Blueone Modbus Mdata Backup List xxxx-->
+                <!--DEVNM&HJ5203-10$-->
+                <!--DEVTP37MEXT17.17.0.0.0.0MODEN0MODPORT502MODADR2DIFL0AOTP0.0IORP5IOSM5-->
+                <!--AIFL0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0-->
+                <!--TIFL0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0-->
+                <!--MOAIFL0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0-->
+                <!--MOTIFL0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0-->
+                <!--MOAIFL0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0-->
+                <!--MOTIFL0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0-->
+                <!--MOAIFL0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0-->
+                <!--MOTIFL0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0-->
+                <!--MOAIFL0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0-->
+                <!--MOTIFL0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0-->
+                <!--MOAIFL0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0-->
+                <!--MOTIFL0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0-->
+                <!--MOAIFL0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0-->
+                <!--MOTIFL0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0-->
+                <!--RTUOV300OFFCLOSE1OFFCNNT1-->
+                <!--COM1TYPE2BAUD9600DT8ST1CHK2STM5MODE0-->
+                <!--COM2TYPE2BAUD9600DT8ST1CHK0STM5MODE0-->
+                <!--EN1COM0ID1CMD02REG8448LEN1NAME&变频器状态$-->
+                <!--EN1COM0ID1CMD02REG12288LEN1NAME&运行频率$-->
+                <!--EN1COM0ID1CMD02REG12292LEN1NAME&运行电流$-->
+                <!--EN1COM0ID1CMD05REG8193LEN1NAME&设定频率$-->
+                <!--Blueone Modbus Mdata Backup List yyyy-->
+                <CategoryItem ID="ID_Blueone_REMIO" TextId="HJXXX_IO_MOD"/>
+            </CategoryList>
+            <ExternalTextList>
+                <PrimaryLanguage>
+                    <Text TextId="HJ5200_VEND_IDNT" Value="HJ5200 IO Module"/>
+                    <Text TextId="HJ5200_MO_ID" Value="HJ5200-PN-HJ5203-10-A060"/>
+                    <Text TextId="HJ5200_MO_INFO_ID" Value="HJ5200 Digital/Analog Input and Output Module"/>
+                    <Text TextId="HJ5200_Subslot_8000" Value="X1"/>
+                    <Text TextId="HJ5200_Subslot_8001" Value="Port1"/>
+                    <Text TextId="HJ5200_Subslot_8002" Value="Port2"/>
+                    <Text TextId="HJ5200_Subslot_8003" Value="Port3"/>
+                    <Text TextId="HJ5200_ID_IF" Value="Interface"/>
+                    <Text TextId="HJ5200_ID_IF_P1" Value="Port1"/>
+                    <Text TextId="HJ5200_ID_IF_P2" Value="Port2"/>
+                    <Text TextId="HJ5200_ID_IF_P3" Value="Port3"/>
+                    <Text TextId="HJ3200_DI_ID" Value="Digital Input Module"/>
+                    <Text TextId="HJ3200_DI_NAME" Value="Digital Input Module"/>
+                    <Text TextId="HJ3200_DI_INFO" Value="Digital Input Module"/>
+                    <Text TextId="HJ3200_SUB_DI_ID" Value="Digital Input SubModule"/>
+                    <Text TextId="HJ3200_SUB_DI_NAME" Value="Digital Input SubModule"/>
+                    <Text TextId="HJ3200_SUB_DI_INFO" Value="Digital Input SubModule"/>
+                    <Text TextId="HJ3200_SUB_DI_DATA" Value="Digital Input SubModule"/>
+                    <Text TextId="HJ3200_DO_ID" Value="Digital Output Module"/>
+                    <Text TextId="HJ3200_DO_NAME" Value="Digital Output Module"/>
+                    <Text TextId="HJ3200_DO_INFO" Value="Digital Output Module"/>
+                    <Text TextId="HJ3200_SUB_DO_ID" Value="Digital Output SubModule"/>
+                    <Text TextId="HJ3200_SUB_DO_NAME" Value="Digital Output SubModule"/>
+                    <Text TextId="HJ3200_SUB_DO_INFO" Value="Digital Output SubModule"/>
+                    <Text TextId="HJ3200_SUB_DO_DATA" Value="Digital Output SubModule"/>
+                    <Text TextId="HJ3200_MOD_ID_1" Value="变频器状态"/>
+                    <Text TextId="HJ3200_MOD_NAME_1" Value="变频器状态 COM1/addr=1/reg=8448"/>
+                    <Text TextId="HJ3200_MOD_INFO_1" Value="变频器状态"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_1" Value="变频器状态"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_1" Value="变频器状态 COM1/addr=1/reg=8448"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_1" Value="变频器状态"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_1" Value="变频器状态 data COM1/addr=1/reg=8448"/>
+                    <Text TextId="HJ3200_MOD_ID_2" Value="运行频率"/>
+                    <Text TextId="HJ3200_MOD_NAME_2" Value="运行频率 COM1/addr=1/reg=12288"/>
+                    <Text TextId="HJ3200_MOD_INFO_2" Value="运行频率"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_2" Value="运行频率"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_2" Value="运行频率 COM1/addr=1/reg=12288"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_2" Value="运行频率"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_2" Value="运行频率 data COM1/addr=1/reg=12288"/>
+                    <Text TextId="HJ3200_MOD_ID_3" Value="运行电流"/>
+                    <Text TextId="HJ3200_MOD_NAME_3" Value="运行电流 COM1/addr=1/reg=12292"/>
+                    <Text TextId="HJ3200_MOD_INFO_3" Value="运行电流"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_3" Value="运行电流"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_3" Value="运行电流 COM1/addr=1/reg=12292"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_3" Value="运行电流"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_3" Value="运行电流 data COM1/addr=1/reg=12292"/>
+                    <Text TextId="HJ3200_MOD_ID_4" Value="设定频率"/>
+                    <Text TextId="HJ3200_MOD_NAME_4" Value="设定频率 COM1/addr=1/reg=8193"/>
+                    <Text TextId="HJ3200_MOD_INFO_4" Value="设定频率"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_4" Value="设定频率"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_4" Value="设定频率 COM1/addr=1/reg=8193"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_4" Value="设定频率"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_4" Value="设定频率 data COM1/addr=1/reg=8193"/>
+                    <Text TextId="HJ3200_MEXT1_DI_ID" Value="M1 HJ2003 Digital Input Module"/>
+                    <Text TextId="HJ3200_MEXT1_DI_NAME" Value="M1 HJ2003 Digital Input Module"/>
+                    <Text TextId="HJ3200_MEXT1_DI_INFO" Value="M1 HJ2003 Digital Input Module"/>
+                    <Text TextId="HJ3200_MEXT1_SUB_DI_ID" Value="M1 HJ2003 Digital Input SubModule"/>
+                    <Text TextId="HJ3200_MEXT1_SUB_DI_NAME" Value="M1 HJ2003 Digital Input SubModule"/>
+                    <Text TextId="HJ3200_MEXT1_SUB_DI_INFO" Value="M1 HJ2003 Digital Input SubModule"/>
+                    <Text TextId="HJ3200_MEXT1_SUB_DI_DATA" Value="M1 HJ2003 Digital Input SubModule"/>
+                    <Text TextId="HJ3200_MEXT1_DO_ID" Value="M1 HJ2003 Digital Output Module"/>
+                    <Text TextId="HJ3200_MEXT1_DO_NAME" Value="M1 HJ2003 Digital Output Module"/>
+                    <Text TextId="HJ3200_MEXT1_DO_INFO" Value="M1 HJ2003 Digital Output Module"/>
+                    <Text TextId="HJ3200_MEXT1_SUB_DO_ID" Value="M1 HJ2003 Digital Output SubModule"/>
+                    <Text TextId="HJ3200_MEXT1_SUB_DO_NAME" Value="M1 HJ2003 Digital Output SubModule"/>
+                    <Text TextId="HJ3200_MEXT1_SUB_DO_INFO" Value="M1 HJ2003 Digital Output SubModule"/>
+                    <Text TextId="HJ3200_MEXT1_SUB_DO_DATA" Value="M1 HJ2003 Digital Output SubModule"/>
+                    <Text TextId="HJ3200_MEXT2_DI_ID" Value="M2 HJ2003 Digital Input Module"/>
+                    <Text TextId="HJ3200_MEXT2_DI_NAME" Value="M2 HJ2003 Digital Input Module"/>
+                    <Text TextId="HJ3200_MEXT2_DI_INFO" Value="M2 HJ2003 Digital Input Module"/>
+                    <Text TextId="HJ3200_MEXT2_SUB_DI_ID" Value="M2 HJ2003 Digital Input SubModule"/>
+                    <Text TextId="HJ3200_MEXT2_SUB_DI_NAME" Value="M2 HJ2003 Digital Input SubModule"/>
+                    <Text TextId="HJ3200_MEXT2_SUB_DI_INFO" Value="M2 HJ2003 Digital Input SubModule"/>
+                    <Text TextId="HJ3200_MEXT2_SUB_DI_DATA" Value="M2 HJ2003 Digital Input SubModule"/>
+                    <Text TextId="HJ3200_MEXT2_DO_ID" Value="M2 HJ2003 Digital Output Module"/>
+                    <Text TextId="HJ3200_MEXT2_DO_NAME" Value="M2 HJ2003 Digital Output Module"/>
+                    <Text TextId="HJ3200_MEXT2_DO_INFO" Value="M2 HJ2003 Digital Output Module"/>
+                    <Text TextId="HJ3200_MEXT2_SUB_DO_ID" Value="M2 HJ2003 Digital Output SubModule"/>
+                    <Text TextId="HJ3200_MEXT2_SUB_DO_NAME" Value="M2 HJ2003 Digital Output SubModule"/>
+                    <Text TextId="HJ3200_MEXT2_SUB_DO_INFO" Value="M2 HJ2003 Digital Output SubModule"/>
+                    <Text TextId="HJ3200_MEXT2_SUB_DO_DATA" Value="M2 HJ2003 Digital Output SubModule"/>
+                    <Text TextId="HJ3200_ALARM_ID" Value="Alarm Data Module"/>
+                    <Text TextId="HJ3200_ALARM_NAME" Value="Alarm Data Module"/>
+                    <Text TextId="HJ3200_ALARM_INFO" Value="Alarm Data Module"/>
+                    <Text TextId="HJ3200_SUB_ALARM_ID" Value="Alarm Data SubModule"/>
+                    <Text TextId="HJ3200_SUB_ALARM_NAME" Value="Alarm Data SubModule"/>
+                    <Text TextId="HJ3200_SUB_ALARM_INFO" Value="Alarm Data SubModule"/>
+                    <Text TextId="HJ3200_SUB_ALARM_DATA" Value="Alarm Data SubModule"/>
+                    <Text TextId="HJXXX_IO_MOD" Value="IOModule"/>
+                </PrimaryLanguage>
+            </ExternalTextList>
+        </ApplicationProcess>
+    </ProfileBody>
+</ISO15745Profile>

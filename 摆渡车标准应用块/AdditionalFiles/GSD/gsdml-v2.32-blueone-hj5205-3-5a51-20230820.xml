@@ -1,0 +1,2609 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ISO15745Profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.profibus.com/GSDML/2003/11/DeviceProfile ..\XSD\GSDML-DeviceProfile-V2.32.xsd" xmlns="http://www.profibus.com/GSDML/2003/11/DeviceProfile">
+    <ProfileHeader>
+        <ProfileIdentification>PROFINET Device Profile</ProfileIdentification>
+        <ProfileRevision>1.00</ProfileRevision>
+        <ProfileName>Device Profile for PROFINET Devices</ProfileName>
+        <ProfileSource>PROFIBUS Nutzerorganisation e. V. (PNO)</ProfileSource>
+        <ProfileClassID>Device</ProfileClassID>
+        <ISO15745Reference>
+            <ISO15745Part>4</ISO15745Part>
+            <ISO15745Edition>1</ISO15745Edition>
+            <ProfileTechnology>GSDML</ProfileTechnology>
+        </ISO15745Reference>
+    </ProfileHeader>
+    <ProfileBody>
+        <DeviceIdentity VendorID="0x01E3" DeviceID="0x3100">
+            <InfoText TextId="HJ5200_VEND_IDNT"/>
+            <VendorName Value="Blueone"/>
+        </DeviceIdentity>
+        <DeviceFunction>
+            <Family MainFamily="I/O" ProductFamily="Remote/IO"/>
+        </DeviceFunction>
+        <ApplicationProcess>
+            <DeviceAccessPointList>
+                <DeviceAccessPointItem ID="DAP1" PNIO_Version="V2.32" RequiredSchemaVersion="V2.31" PhysicalSlots="0..89" FixedInSlots="0" ModuleIdentNumber="0x00000001" MinDeviceInterval="256" ImplementationType="hj5205-3 IO device" DNS_CompatibleName="hj5205-3" ExtendedAddressAssignmentSupported="true" AddressAssignment="DCP" ObjectUUID_LocalIndex="1" MultipleWriteSupported="true" SharedDeviceSupported="true" DeviceAccessSupported="true" MaxSupportedRecordSize="4096" NameOfStationNotTransferable="true" ParameterizationSpeedupSupported="false" LLDP_NoD_Supported="true" ResetToFactoryModes="2" CheckDeviceID_Allowed="true" PowerOnToCommReady="1500">
+                    <ModuleInfo CategoryRef="ID_Blueone_REMIO">
+                        <Name TextId="HJ5200_MO_ID"/>
+                        <InfoText TextId="HJ5200_MO_INFO_ID"/>
+                        <VendorName Value="Blueone"/>
+                        <OrderNumber Value="HJ5200-PN"/>
+                    </ModuleInfo>
+                    <CertificationInfo ConformanceClass="B" ApplicationClass="" NetloadClass="I"/>
+                    <SubslotList>
+                        <SubslotItem SubslotNumber="32768" TextId="HJ5200_Subslot_8000"/>
+                        <SubslotItem SubslotNumber="32769" TextId="HJ5200_Subslot_8001"/>
+                        <SubslotItem SubslotNumber="32770" TextId="HJ5200_Subslot_8002"/>
+                        <SubslotItem SubslotNumber="32771" TextId="HJ5200_Subslot_8003"/>
+                    </SubslotList>
+                    <IOConfigData MaxInputLength="1440" MaxOutputLength="1440"/>
+                    <UseableModules>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_DI_ID" FixedInSlots="1"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_DO_ID" FixedInSlots="2"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_1" FixedInSlots="3"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_2" FixedInSlots="4"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_3" FixedInSlots="5"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_4" FixedInSlots="6"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_5" FixedInSlots="7"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_6" FixedInSlots="8"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_7" FixedInSlots="9"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_8" FixedInSlots="10"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_9" FixedInSlots="11"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_10" FixedInSlots="12"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_11" FixedInSlots="13"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_12" FixedInSlots="14"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_13" FixedInSlots="15"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_14" FixedInSlots="16"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_15" FixedInSlots="17"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_16" FixedInSlots="18"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_17" FixedInSlots="19"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_18" FixedInSlots="20"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_19" FixedInSlots="21"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_20" FixedInSlots="22"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_21" FixedInSlots="23"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_22" FixedInSlots="24"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_23" FixedInSlots="25"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_24" FixedInSlots="26"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_25" FixedInSlots="27"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_26" FixedInSlots="28"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_27" FixedInSlots="29"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_28" FixedInSlots="30"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_29" FixedInSlots="31"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_30" FixedInSlots="32"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_31" FixedInSlots="33"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_32" FixedInSlots="34"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_33" FixedInSlots="35"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_34" FixedInSlots="36"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_35" FixedInSlots="37"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_36" FixedInSlots="38"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_37" FixedInSlots="39"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_38" FixedInSlots="40"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_39" FixedInSlots="41"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_40" FixedInSlots="42"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_41" FixedInSlots="43"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_42" FixedInSlots="44"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_43" FixedInSlots="45"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_44" FixedInSlots="46"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_45" FixedInSlots="47"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_46" FixedInSlots="48"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_47" FixedInSlots="49"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_48" FixedInSlots="50"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_49" FixedInSlots="51"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_50" FixedInSlots="52"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_51" FixedInSlots="53"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_52" FixedInSlots="54"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_53" FixedInSlots="55"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_54" FixedInSlots="56"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_55" FixedInSlots="57"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_56" FixedInSlots="58"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_57" FixedInSlots="59"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_58" FixedInSlots="60"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_59" FixedInSlots="61"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_60" FixedInSlots="62"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_61" FixedInSlots="63"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_62" FixedInSlots="64"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_63" FixedInSlots="65"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_64" FixedInSlots="66"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_65" FixedInSlots="67"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_66" FixedInSlots="68"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_67" FixedInSlots="69"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_68" FixedInSlots="70"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_69" FixedInSlots="71"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_70" FixedInSlots="72"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_71" FixedInSlots="73"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_72" FixedInSlots="74"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_73" FixedInSlots="75"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_74" FixedInSlots="76"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_75" FixedInSlots="77"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_76" FixedInSlots="78"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_77" FixedInSlots="79"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_78" FixedInSlots="80"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_79" FixedInSlots="81"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_80" FixedInSlots="82"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_81" FixedInSlots="83"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_82" FixedInSlots="84"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_83" FixedInSlots="85"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_84" FixedInSlots="86"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_85" FixedInSlots="87"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_MOD_ID_86" FixedInSlots="88"/>
+                        <ModuleItemRef ModuleItemTarget="HJ3200_ALARM_ID" FixedInSlots="89"/>
+                    </UseableModules>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="DAP1" SubmoduleIdentNumber="0x0001" MayIssueProcessAlarm="false">
+                            <IOData/>
+                            <ModuleInfo>
+                                <Name TextId="HJ5200_MO_ID"/>
+                                <InfoText TextId="HJ5200_MO_INFO_ID"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                    <SystemDefinedSubmoduleList>
+                        <InterfaceSubmoduleItem ID="HJ5200_ID_IF" TextId="HJ5200_ID_IF" SubslotNumber="32768" SubmoduleIdentNumber="0x0F00" SupportedRT_Classes="RT_CLASS_1" SupportedProtocols="SNMP;LLDP" SupportedMibs="MIB2" NetworkComponentDiagnosisSupported="true" PTP_BoundarySupported="true" DCP_BoundarySupported="true" DCP_HelloSupported="true">
+                            <ApplicationRelations StartupMode="Advanced;Legacy" NumberOfAR="2">
+                                <TimingProperties PreferredSendClock="128" SendClock="32 64 128" ReductionRatio="1 2 4 8 16 32 64 128 256 512" ReductionRatioPow2="2 4 8 16 32 64 128 256 512"/>
+                            </ApplicationRelations>
+                            <MediaRedundancy SupportedRole="Client"/>
+                        </InterfaceSubmoduleItem>
+                        <PortSubmoduleItem ID="HJ5200_ID_IF_P1" TextId="HJ5200_ID_IF_P1" SubslotNumber="32769" SubmoduleIdentNumber="0x0F01" MAUTypes="16" CheckMAUTypeSupported="true" PortDeactivationSupported="true" LinkStateDiagnosisCapability="Up+Down" SupportsRingportConfig="true" IsDefaultRingport="true">
+                            <MAUTypeList>
+                                <MAUTypeItem Value="16" AdjustSupported="true"/>
+                            </MAUTypeList>
+                        </PortSubmoduleItem>
+                        <PortSubmoduleItem ID="HJ5200_ID_IF_P2" TextId="HJ5200_ID_IF_P2" SubslotNumber="32770" SubmoduleIdentNumber="0x0F02" MAUTypes="16" CheckMAUTypeSupported="true" PortDeactivationSupported="true" LinkStateDiagnosisCapability="Up+Down" SupportsRingportConfig="true" IsDefaultRingport="true">
+                            <MAUTypeList>
+                                <MAUTypeItem Value="16" AdjustSupported="true"/>
+                            </MAUTypeList>
+                        </PortSubmoduleItem>
+                        <PortSubmoduleItem ID="HJ5200_ID_IF_P3" TextId="HJ5200_ID_IF_P3" SubslotNumber="32771" SubmoduleIdentNumber="0x0F03" MAUTypes="16" CheckMAUTypeSupported="true" PortDeactivationSupported="true" LinkStateDiagnosisCapability="Up+Down" SupportsRingportConfig="true" IsDefaultRingport="true">
+                            <MAUTypeList>
+                                <MAUTypeItem Value="16" AdjustSupported="true"/>
+                            </MAUTypeList>
+                        </PortSubmoduleItem>
+                    </SystemDefinedSubmoduleList>
+                </DeviceAccessPointItem>
+            </DeviceAccessPointList>
+            <ModuleList>
+                <ModuleItem ID="HJ3200_DI_ID" ModuleIdentNumber="0x00000020">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_DI_NAME"/>
+                        <InfoText TextId="HJ3200_DI_INFO"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUB_DI_ID" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUB_DI_DATA" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUB_DI_NAME"/>
+                                <InfoText TextId="HJ3200_SUB_DI_INFO"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_DO_ID" ModuleIdentNumber="0x00000021">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_DO_NAME"/>
+                        <InfoText TextId="HJ3200_DO_INFO"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUB_DO_ID" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Output>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUB_DO_DATA" UseAsBits="true"/>
+                                </Output>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUB_DO_NAME"/>
+                                <InfoText TextId="HJ3200_SUB_DO_INFO"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_1" ModuleIdentNumber="0x000003E8">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_1"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_1"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_1" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_1" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_1"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_1"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_2" ModuleIdentNumber="0x000003E9">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_2"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_2"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_2" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_2" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_2"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_2"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_3" ModuleIdentNumber="0x000003EA">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_3"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_3"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_3" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_3" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_3"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_3"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_4" ModuleIdentNumber="0x000003EB">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_4"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_4"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_4" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_4" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_4"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_4"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_5" ModuleIdentNumber="0x000003EC">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_5"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_5"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_5" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_5" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_5"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_5"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_6" ModuleIdentNumber="0x000003ED">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_6"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_6"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_6" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_6" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_6"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_6"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_7" ModuleIdentNumber="0x000003EE">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_7"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_7"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_7" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_7" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_7"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_7"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_8" ModuleIdentNumber="0x000003EF">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_8"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_8"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_8" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_8" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_8"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_8"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_9" ModuleIdentNumber="0x000003F0">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_9"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_9"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_9" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_9" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_9"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_9"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_10" ModuleIdentNumber="0x000003F1">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_10"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_10"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_10" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_10" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_10"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_10"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_11" ModuleIdentNumber="0x000003F2">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_11"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_11"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_11" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_11" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_11"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_11"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_12" ModuleIdentNumber="0x000003F3">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_12"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_12"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_12" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_12" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_12"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_12"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_13" ModuleIdentNumber="0x000003F4">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_13"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_13"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_13" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_13" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_13"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_13"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_14" ModuleIdentNumber="0x000003F5">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_14"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_14"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_14" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_14" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_14"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_14"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_15" ModuleIdentNumber="0x000003F6">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_15"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_15"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_15" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_15" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_15"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_15"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_16" ModuleIdentNumber="0x000003F7">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_16"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_16"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_16" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_16" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_16"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_16"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_17" ModuleIdentNumber="0x000003F8">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_17"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_17"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_17" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_17" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_17"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_17"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_18" ModuleIdentNumber="0x000003F9">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_18"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_18"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_18" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_18" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_18"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_18"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_19" ModuleIdentNumber="0x000003FA">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_19"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_19"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_19" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_19" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_19"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_19"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_20" ModuleIdentNumber="0x000003FB">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_20"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_20"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_20" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_20" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_20"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_20"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_21" ModuleIdentNumber="0x000003FC">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_21"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_21"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_21" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_21" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_21"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_21"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_22" ModuleIdentNumber="0x000003FD">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_22"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_22"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_22" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_22" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_22"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_22"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_23" ModuleIdentNumber="0x000003FE">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_23"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_23"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_23" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_23" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_23"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_23"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_24" ModuleIdentNumber="0x000003FF">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_24"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_24"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_24" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_24" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_24"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_24"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_25" ModuleIdentNumber="0x00000400">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_25"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_25"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_25" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Output>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_25" UseAsBits="true"/>
+                                </Output>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_25"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_25"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_26" ModuleIdentNumber="0x00000401">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_26"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_26"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_26" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Output>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_26" UseAsBits="true"/>
+                                </Output>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_26"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_26"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_27" ModuleIdentNumber="0x00000402">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_27"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_27"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_27" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Output>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_27" UseAsBits="true"/>
+                                </Output>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_27"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_27"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_28" ModuleIdentNumber="0x00000403">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_28"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_28"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_28" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Output>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_28" UseAsBits="true"/>
+                                </Output>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_28"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_28"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_29" ModuleIdentNumber="0x00000404">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_29"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_29"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_29" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Output>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_29" UseAsBits="true"/>
+                                </Output>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_29"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_29"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_30" ModuleIdentNumber="0x00000405">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_30"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_30"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_30" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Output>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_30" UseAsBits="true"/>
+                                </Output>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_30"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_30"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_31" ModuleIdentNumber="0x00000406">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_31"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_31"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_31" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Output>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_31" UseAsBits="true"/>
+                                </Output>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_31"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_31"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_32" ModuleIdentNumber="0x00000407">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_32"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_32"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_32" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Output>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_32" UseAsBits="true"/>
+                                </Output>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_32"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_32"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_33" ModuleIdentNumber="0x00000408">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_33"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_33"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_33" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_33" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_33"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_33"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_34" ModuleIdentNumber="0x00000409">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_34"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_34"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_34" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_34" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_34"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_34"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_35" ModuleIdentNumber="0x0000040A">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_35"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_35"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_35" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_35" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_35"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_35"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_36" ModuleIdentNumber="0x0000040B">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_36"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_36"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_36" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_36" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_36"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_36"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_37" ModuleIdentNumber="0x0000040C">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_37"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_37"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_37" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_37" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_37"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_37"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_38" ModuleIdentNumber="0x0000040D">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_38"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_38"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_38" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_38" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_38"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_38"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_39" ModuleIdentNumber="0x0000040E">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_39"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_39"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_39" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_39" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_39"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_39"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_40" ModuleIdentNumber="0x0000040F">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_40"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_40"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_40" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_40" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_40"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_40"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_41" ModuleIdentNumber="0x00000410">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_41"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_41"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_41" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_41" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_41"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_41"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_42" ModuleIdentNumber="0x00000411">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_42"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_42"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_42" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_42" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_42"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_42"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_43" ModuleIdentNumber="0x00000412">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_43"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_43"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_43" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_43" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_43"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_43"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_44" ModuleIdentNumber="0x00000413">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_44"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_44"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_44" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_44" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_44"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_44"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_45" ModuleIdentNumber="0x00000414">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_45"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_45"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_45" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_45" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_45"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_45"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_46" ModuleIdentNumber="0x00000415">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_46"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_46"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_46" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_46" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_46"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_46"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_47" ModuleIdentNumber="0x00000416">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_47"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_47"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_47" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_47" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_47"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_47"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_48" ModuleIdentNumber="0x00000417">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_48"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_48"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_48" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_48" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_48"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_48"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_49" ModuleIdentNumber="0x00000418">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_49"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_49"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_49" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_49" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_49"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_49"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_50" ModuleIdentNumber="0x00000419">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_50"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_50"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_50" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_50" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_50"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_50"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_51" ModuleIdentNumber="0x0000041A">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_51"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_51"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_51" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_51" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_51"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_51"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_52" ModuleIdentNumber="0x0000041B">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_52"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_52"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_52" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_52" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_52"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_52"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_53" ModuleIdentNumber="0x0000041C">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_53"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_53"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_53" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_53" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_53"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_53"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_54" ModuleIdentNumber="0x0000041D">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_54"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_54"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_54" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_54" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_54"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_54"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_55" ModuleIdentNumber="0x0000041E">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_55"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_55"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_55" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_55" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_55"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_55"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_56" ModuleIdentNumber="0x0000041F">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_56"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_56"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_56" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_56" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_56"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_56"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_57" ModuleIdentNumber="0x00000420">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_57"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_57"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_57" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_57" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_57"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_57"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_58" ModuleIdentNumber="0x00000421">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_58"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_58"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_58" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_58" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_58"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_58"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_59" ModuleIdentNumber="0x00000422">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_59"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_59"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_59" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_59" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_59"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_59"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_60" ModuleIdentNumber="0x00000423">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_60"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_60"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_60" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_60" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_60"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_60"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_61" ModuleIdentNumber="0x00000424">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_61"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_61"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_61" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_61" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_61"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_61"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_62" ModuleIdentNumber="0x00000425">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_62"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_62"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_62" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_62" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_62"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_62"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_63" ModuleIdentNumber="0x00000426">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_63"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_63"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_63" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_63" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_63"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_63"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_64" ModuleIdentNumber="0x00000427">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_64"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_64"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_64" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_64" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_64"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_64"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_65" ModuleIdentNumber="0x00000428">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_65"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_65"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_65" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_65" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_65"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_65"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_66" ModuleIdentNumber="0x00000429">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_66"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_66"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_66" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_66" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_66"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_66"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_67" ModuleIdentNumber="0x0000042A">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_67"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_67"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_67" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_67" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_67"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_67"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_68" ModuleIdentNumber="0x0000042B">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_68"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_68"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_68" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_68" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_68"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_68"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_69" ModuleIdentNumber="0x0000042C">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_69"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_69"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_69" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Output>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_69" UseAsBits="true"/>
+                                </Output>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_69"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_69"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_70" ModuleIdentNumber="0x0000042D">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_70"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_70"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_70" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Output>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_70" UseAsBits="true"/>
+                                </Output>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_70"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_70"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_71" ModuleIdentNumber="0x0000042E">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_71"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_71"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_71" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Output>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_71" UseAsBits="true"/>
+                                </Output>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_71"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_71"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_72" ModuleIdentNumber="0x0000042F">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_72"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_72"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_72" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Output>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_72" UseAsBits="true"/>
+                                </Output>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_72"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_72"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_73" ModuleIdentNumber="0x00000430">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_73"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_73"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_73" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Output>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_73" UseAsBits="true"/>
+                                </Output>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_73"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_73"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_74" ModuleIdentNumber="0x00000431">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_74"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_74"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_74" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Output>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_74" UseAsBits="true"/>
+                                </Output>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_74"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_74"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_75" ModuleIdentNumber="0x00000432">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_75"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_75"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_75" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Output>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_75" UseAsBits="true"/>
+                                </Output>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_75"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_75"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_76" ModuleIdentNumber="0x00000433">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_76"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_76"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_76" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Output>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_76" UseAsBits="true"/>
+                                </Output>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_76"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_76"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_77" ModuleIdentNumber="0x00000434">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_77"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_77"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_77" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Output>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_77" UseAsBits="true"/>
+                                </Output>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_77"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_77"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_78" ModuleIdentNumber="0x00000435">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_78"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_78"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_78" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Output>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_78" UseAsBits="true"/>
+                                </Output>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_78"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_78"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_79" ModuleIdentNumber="0x00000436">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_79"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_79"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_79" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Output>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_79" UseAsBits="true"/>
+                                </Output>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_79"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_79"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_80" ModuleIdentNumber="0x00000437">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_80"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_80"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_80" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Output>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_80" UseAsBits="true"/>
+                                </Output>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_80"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_80"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_81" ModuleIdentNumber="0x00000438">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_81"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_81"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_81" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Output>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_81" UseAsBits="true"/>
+                                </Output>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_81"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_81"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_82" ModuleIdentNumber="0x00000439">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_82"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_82"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_82" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Output>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_82" UseAsBits="true"/>
+                                </Output>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_82"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_82"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_83" ModuleIdentNumber="0x0000043A">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_83"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_83"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_83" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Output>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_83" UseAsBits="true"/>
+                                </Output>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_83"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_83"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_84" ModuleIdentNumber="0x0000043B">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_84"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_84"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_84" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Output>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_84" UseAsBits="true"/>
+                                </Output>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_84"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_84"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_85" ModuleIdentNumber="0x0000043C">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_85"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_85"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_85" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Output>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_85" UseAsBits="true"/>
+                                </Output>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_85"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_85"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_MOD_ID_86" ModuleIdentNumber="0x0000043D">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_MOD_NAME_86"/>
+                        <InfoText TextId="HJ3200_MOD_INFO_86"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUBMOD_ID_86" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Output>
+                                    <DataItem DataType="OctetString" Length="2" TextId="HJ3200_SUBMOD_DATA_86" UseAsBits="true"/>
+                                </Output>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUBMOD_NAME_86"/>
+                                <InfoText TextId="HJ3200_SUBMOD_INFO_86"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+                <ModuleItem ID="HJ3200_ALARM_ID" ModuleIdentNumber="0x0000001F">
+                    <ModuleInfo>
+                        <Name TextId="HJ3200_ALARM_NAME"/>
+                        <InfoText TextId="HJ3200_ALARM_INFO"/>
+                    </ModuleInfo>
+                    <VirtualSubmoduleList>
+                        <VirtualSubmoduleItem ID="HJ3200_SUB_ALARM_ID" SubmoduleIdentNumber="0x00000001" FixedInSubslots="1" API="0" MayIssueProcessAlarm="false">
+                            <IOData IOPS_Length="1" IOCS_Length="1">
+                                <Input>
+                                    <DataItem DataType="OctetString" Length="13" TextId="HJ3200_SUB_ALARM_DATA" UseAsBits="true"/>
+                                </Input>
+                            </IOData>
+                            <ModuleInfo>
+                                <Name TextId="HJ3200_SUB_ALARM_NAME"/>
+                                <InfoText TextId="HJ3200_SUB_ALARM_INFO"/>
+                            </ModuleInfo>
+                        </VirtualSubmoduleItem>
+                    </VirtualSubmoduleList>
+                </ModuleItem>
+            </ModuleList>
+            <CategoryList>
+                <!--Blueone Modbus Mdata Backup List xxxx-->
+                <!--DEVNM&HJ5205-3$-->
+                <!--DEVTP37MEXT0.0.0.0.0.0MODEN0MODPORT502MODADR2DIFL0AOTP0.0IORP5IOSM5-->
+                <!--AIFL0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0-->
+                <!--TIFL0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0-->
+                <!--MOAIFL0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0-->
+                <!--MOTIFL0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0-->
+                <!--MOAIFL0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0-->
+                <!--MOTIFL0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0-->
+                <!--MOAIFL0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0-->
+                <!--MOTIFL0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0-->
+                <!--MOAIFL0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0-->
+                <!--MOTIFL0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0-->
+                <!--MOAIFL0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0-->
+                <!--MOTIFL0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0-->
+                <!--MOAIFL0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0-->
+                <!--MOTIFL0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0-->
+                <!--RTUOV300OFFCLOSE1OFFCNNT1-->
+                <!--COM1TYPE2BAUD9600DT8ST1CHK2STM5MODE0-->
+                <!--COM2TYPE2BAUD9600DT8ST1CHK0STM5MODE0-->
+                <!--EN1COM0ID1CMD02REG8448LEN1NAME&2室1区循环风机状$-->
+                <!--EN1COM0ID2CMD02REG8448LEN1NAME&2室2区循环风机状$-->
+                <!--EN1COM0ID3CMD02REG8448LEN1NAME&2室3区循环风机状$-->
+                <!--EN1COM0ID4CMD02REG8448LEN1NAME&2室4区循环风机状$-->
+                <!--EN1COM0ID5CMD02REG8448LEN1NAME&2室5区循环风机状$-->
+                <!--EN1COM0ID6CMD02REG8448LEN1NAME&2室6区循环风机状$-->
+                <!--EN1COM0ID7CMD02REG8448LEN1NAME&2室7区循环风机状$-->
+                <!--EN1COM0ID8CMD02REG8448LEN1NAME&2室8区循环风机状$-->
+                <!--EN1COM0ID1CMD02REG12288LEN1NAME&2室1区循环运行频$-->
+                <!--EN1COM0ID2CMD02REG12288LEN1NAME&2室2区循环运行频$-->
+                <!--EN1COM0ID3CMD02REG12288LEN1NAME&2室3区循环运行频$-->
+                <!--EN1COM0ID4CMD02REG12288LEN1NAME&2室4区循环运行频$-->
+                <!--EN1COM0ID5CMD02REG12288LEN1NAME&2室5区循环运行频$-->
+                <!--EN1COM0ID6CMD02REG12288LEN1NAME&2室6区循环运行频$-->
+                <!--EN1COM0ID7CMD02REG12288LEN1NAME&2室7区循环运行频$-->
+                <!--EN1COM0ID8CMD02REG12288LEN1NAME&2室8区循环运行频$-->
+                <!--EN1COM0ID1CMD02REG12292LEN1NAME&2室1区循环运行电$-->
+                <!--EN1COM0ID2CMD02REG12292LEN1NAME&2室2区循环运行电$-->
+                <!--EN1COM0ID3CMD02REG12292LEN1NAME&2室3区循环运行电$-->
+                <!--EN1COM0ID4CMD02REG12292LEN1NAME&2室4区循环运行电$-->
+                <!--EN1COM0ID5CMD02REG12292LEN1NAME&2室5区循环运行电$-->
+                <!--EN1COM0ID6CMD02REG12292LEN1NAME&2室6区循环运行电$-->
+                <!--EN1COM0ID7CMD02REG12292LEN1NAME&2室7区循环运行电$-->
+                <!--EN1COM0ID8CMD02REG12292LEN1NAME&2室8区循环运行电$-->
+                <!--EN1COM0ID1CMD05REG8193LEN1NAME&2室1区循环设定频$-->
+                <!--EN1COM0ID2CMD05REG8193LEN1NAME&2室2区循环设定频$-->
+                <!--EN1COM0ID3CMD05REG8193LEN1NAME&2室3区循环设定频$-->
+                <!--EN1COM0ID4CMD05REG8193LEN1NAME&2室4区循环设定频$-->
+                <!--EN1COM0ID5CMD05REG8193LEN1NAME&2室5区循环设定频$-->
+                <!--EN1COM0ID6CMD05REG8193LEN1NAME&2室6区循环设定频$-->
+                <!--EN1COM0ID7CMD05REG8193LEN1NAME&2室7区循环设定频$-->
+                <!--EN1COM0ID8CMD05REG8193LEN1NAME&2室8区循环设定频$-->
+                <!--EN1COM1ID1CMD02REG0LEN1NAME&2室供热总压力MV$-->
+                <!--EN1COM1ID2CMD02REG0LEN1NAME&2室1区温度MV$-->
+                <!--EN1COM1ID3CMD02REG0LEN1NAME&2室2区温度MV$-->
+                <!--EN1COM1ID4CMD02REG0LEN1NAME&2室3区温度MV$-->
+                <!--EN1COM1ID5CMD02REG0LEN1NAME&2室4区温度MV$-->
+                <!--EN1COM1ID6CMD02REG0LEN1NAME&2室5区温度MV$-->
+                <!--EN1COM1ID7CMD02REG0LEN1NAME&2室6区温度MV$-->
+                <!--EN1COM1ID8CMD02REG0LEN1NAME&2室7区温度MV$-->
+                <!--EN1COM1ID9CMD02REG0LEN1NAME&2室8区温度MV$-->
+                <!--EN1COM1ID10CMD02REG0LEN1NAME&2室排湿总压力MV$-->
+                <!--EN1COM1ID11CMD02REG0LEN1NAME&2室1区湿度MV$-->
+                <!--EN1COM1ID12CMD02REG0LEN1NAME&2室2区湿度MV$-->
+                <!--EN1COM1ID13CMD02REG0LEN1NAME&2室3区湿度MV$-->
+                <!--EN1COM1ID14CMD02REG0LEN1NAME&2室4区湿度MV$-->
+                <!--EN1COM1ID15CMD02REG0LEN1NAME&2室5区湿度MV$-->
+                <!--EN1COM1ID16CMD02REG0LEN1NAME&2室6区湿度MV$-->
+                <!--EN1COM1ID17CMD02REG0LEN1NAME&2室7区湿度MV$-->
+                <!--EN1COM1ID18CMD02REG0LEN1NAME&2室8区湿度MV$-->
+                <!--EN1COM1ID1CMD02REG2LEN1NAME&2室供热总压力PV$-->
+                <!--EN1COM1ID2CMD02REG2LEN1NAME&2室1区温度PV$-->
+                <!--EN1COM1ID3CMD02REG2LEN1NAME&2室2区温度PV$-->
+                <!--EN1COM1ID4CMD02REG2LEN1NAME&2室3区温度PV$-->
+                <!--EN1COM1ID5CMD02REG2LEN1NAME&2室4区温度PV$-->
+                <!--EN1COM1ID6CMD02REG2LEN1NAME&2室5区温度PV$-->
+                <!--EN1COM1ID7CMD02REG2LEN1NAME&2室6区温度PV$-->
+                <!--EN1COM1ID8CMD02REG2LEN1NAME&2室7区温度PV$-->
+                <!--EN1COM1ID9CMD02REG2LEN1NAME&2室8区温度PV$-->
+                <!--EN1COM1ID10CMD02REG2LEN1NAME&2室排湿总压力PV$-->
+                <!--EN1COM1ID11CMD02REG2LEN1NAME&2室1区湿度PV$-->
+                <!--EN1COM1ID12CMD02REG2LEN1NAME&2室2区湿度PV$-->
+                <!--EN1COM1ID13CMD02REG2LEN1NAME&2室3区湿度PV$-->
+                <!--EN1COM1ID14CMD02REG2LEN1NAME&2室4区湿度PV$-->
+                <!--EN1COM1ID15CMD02REG2LEN1NAME&2室5区湿度PV$-->
+                <!--EN1COM1ID16CMD02REG2LEN1NAME&2室6区湿度PV$-->
+                <!--EN1COM1ID17CMD02REG2LEN1NAME&2室7区湿度PV$-->
+                <!--EN1COM1ID18CMD02REG2LEN1NAME&2室8区湿度PV$-->
+                <!--EN1COM1ID1CMD05REG4LEN1NAME&2室供热总压力SV$-->
+                <!--EN1COM1ID2CMD05REG4LEN1NAME&2室1区温度SV$-->
+                <!--EN1COM1ID3CMD05REG4LEN1NAME&2室2区温度SV$-->
+                <!--EN1COM1ID4CMD05REG4LEN1NAME&2室3区温度SV$-->
+                <!--EN1COM1ID5CMD05REG4LEN1NAME&2室4区温度SV$-->
+                <!--EN1COM1ID6CMD05REG4LEN1NAME&2室5区温度SV$-->
+                <!--EN1COM1ID7CMD05REG4LEN1NAME&2室6区温度SV$-->
+                <!--EN1COM1ID8CMD05REG4LEN1NAME&2室7区温度SV$-->
+                <!--EN1COM1ID9CMD05REG4LEN1NAME&2室8区温度SV$-->
+                <!--EN1COM1ID10CMD05REG4LEN1NAME&2室排湿总压力SV$-->
+                <!--EN1COM1ID11CMD05REG4LEN1NAME&2室1区湿度SV$-->
+                <!--EN1COM1ID12CMD05REG4LEN1NAME&2室2区湿度SV$-->
+                <!--EN1COM1ID13CMD05REG4LEN1NAME&2室3区湿度SV$-->
+                <!--EN1COM1ID14CMD05REG4LEN1NAME&2室4区湿度SV$-->
+                <!--EN1COM1ID15CMD05REG4LEN1NAME&2室5区湿度SV$-->
+                <!--EN1COM1ID16CMD05REG4LEN1NAME&2室6区湿度SV$-->
+                <!--EN1COM1ID17CMD05REG4LEN1NAME&2室7区湿度SV$-->
+                <!--EN1COM1ID18CMD05REG4LEN1NAME&2室8区湿度SV$-->
+                <!--Blueone Modbus Mdata Backup List yyyy-->
+                <CategoryItem ID="ID_Blueone_REMIO" TextId="HJXXX_IO_MOD"/>
+            </CategoryList>
+            <ExternalTextList>
+                <PrimaryLanguage>
+                    <Text TextId="HJ5200_VEND_IDNT" Value="HJ5200 IO Module"/>
+                    <Text TextId="HJ5200_MO_ID" Value="HJ5200-PN-HJ5205-3-5A51"/>
+                    <Text TextId="HJ5200_MO_INFO_ID" Value="HJ5200 Digital/Analog Input and Output Module"/>
+                    <Text TextId="HJ5200_Subslot_8000" Value="X1"/>
+                    <Text TextId="HJ5200_Subslot_8001" Value="Port1"/>
+                    <Text TextId="HJ5200_Subslot_8002" Value="Port2"/>
+                    <Text TextId="HJ5200_Subslot_8003" Value="Port3"/>
+                    <Text TextId="HJ5200_ID_IF" Value="Interface"/>
+                    <Text TextId="HJ5200_ID_IF_P1" Value="Port1"/>
+                    <Text TextId="HJ5200_ID_IF_P2" Value="Port2"/>
+                    <Text TextId="HJ5200_ID_IF_P3" Value="Port3"/>
+                    <Text TextId="HJ3200_DI_ID" Value="Digital Input Module"/>
+                    <Text TextId="HJ3200_DI_NAME" Value="Digital Input Module"/>
+                    <Text TextId="HJ3200_DI_INFO" Value="Digital Input Module"/>
+                    <Text TextId="HJ3200_SUB_DI_ID" Value="Digital Input SubModule"/>
+                    <Text TextId="HJ3200_SUB_DI_NAME" Value="Digital Input SubModule"/>
+                    <Text TextId="HJ3200_SUB_DI_INFO" Value="Digital Input SubModule"/>
+                    <Text TextId="HJ3200_SUB_DI_DATA" Value="Digital Input SubModule"/>
+                    <Text TextId="HJ3200_DO_ID" Value="Digital Output Module"/>
+                    <Text TextId="HJ3200_DO_NAME" Value="Digital Output Module"/>
+                    <Text TextId="HJ3200_DO_INFO" Value="Digital Output Module"/>
+                    <Text TextId="HJ3200_SUB_DO_ID" Value="Digital Output SubModule"/>
+                    <Text TextId="HJ3200_SUB_DO_NAME" Value="Digital Output SubModule"/>
+                    <Text TextId="HJ3200_SUB_DO_INFO" Value="Digital Output SubModule"/>
+                    <Text TextId="HJ3200_SUB_DO_DATA" Value="Digital Output SubModule"/>
+                    <Text TextId="HJ3200_MOD_ID_1" Value="2室1区循环风机状"/>
+                    <Text TextId="HJ3200_MOD_NAME_1" Value="2室1区循环风机状 COM1/addr=1/reg=8448"/>
+                    <Text TextId="HJ3200_MOD_INFO_1" Value="2室1区循环风机状"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_1" Value="2室1区循环风机状"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_1" Value="2室1区循环风机状 COM1/addr=1/reg=8448"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_1" Value="2室1区循环风机状"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_1" Value="2室1区循环风机状 data COM1/addr=1/reg=8448"/>
+                    <Text TextId="HJ3200_MOD_ID_2" Value="2室2区循环风机状"/>
+                    <Text TextId="HJ3200_MOD_NAME_2" Value="2室2区循环风机状 COM1/addr=2/reg=8448"/>
+                    <Text TextId="HJ3200_MOD_INFO_2" Value="2室2区循环风机状"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_2" Value="2室2区循环风机状"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_2" Value="2室2区循环风机状 COM1/addr=2/reg=8448"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_2" Value="2室2区循环风机状"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_2" Value="2室2区循环风机状 data COM1/addr=2/reg=8448"/>
+                    <Text TextId="HJ3200_MOD_ID_3" Value="2室3区循环风机状"/>
+                    <Text TextId="HJ3200_MOD_NAME_3" Value="2室3区循环风机状 COM1/addr=3/reg=8448"/>
+                    <Text TextId="HJ3200_MOD_INFO_3" Value="2室3区循环风机状"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_3" Value="2室3区循环风机状"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_3" Value="2室3区循环风机状 COM1/addr=3/reg=8448"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_3" Value="2室3区循环风机状"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_3" Value="2室3区循环风机状 data COM1/addr=3/reg=8448"/>
+                    <Text TextId="HJ3200_MOD_ID_4" Value="2室4区循环风机状"/>
+                    <Text TextId="HJ3200_MOD_NAME_4" Value="2室4区循环风机状 COM1/addr=4/reg=8448"/>
+                    <Text TextId="HJ3200_MOD_INFO_4" Value="2室4区循环风机状"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_4" Value="2室4区循环风机状"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_4" Value="2室4区循环风机状 COM1/addr=4/reg=8448"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_4" Value="2室4区循环风机状"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_4" Value="2室4区循环风机状 data COM1/addr=4/reg=8448"/>
+                    <Text TextId="HJ3200_MOD_ID_5" Value="2室5区循环风机状"/>
+                    <Text TextId="HJ3200_MOD_NAME_5" Value="2室5区循环风机状 COM1/addr=5/reg=8448"/>
+                    <Text TextId="HJ3200_MOD_INFO_5" Value="2室5区循环风机状"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_5" Value="2室5区循环风机状"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_5" Value="2室5区循环风机状 COM1/addr=5/reg=8448"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_5" Value="2室5区循环风机状"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_5" Value="2室5区循环风机状 data COM1/addr=5/reg=8448"/>
+                    <Text TextId="HJ3200_MOD_ID_6" Value="2室6区循环风机状"/>
+                    <Text TextId="HJ3200_MOD_NAME_6" Value="2室6区循环风机状 COM1/addr=6/reg=8448"/>
+                    <Text TextId="HJ3200_MOD_INFO_6" Value="2室6区循环风机状"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_6" Value="2室6区循环风机状"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_6" Value="2室6区循环风机状 COM1/addr=6/reg=8448"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_6" Value="2室6区循环风机状"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_6" Value="2室6区循环风机状 data COM1/addr=6/reg=8448"/>
+                    <Text TextId="HJ3200_MOD_ID_7" Value="2室7区循环风机状"/>
+                    <Text TextId="HJ3200_MOD_NAME_7" Value="2室7区循环风机状 COM1/addr=7/reg=8448"/>
+                    <Text TextId="HJ3200_MOD_INFO_7" Value="2室7区循环风机状"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_7" Value="2室7区循环风机状"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_7" Value="2室7区循环风机状 COM1/addr=7/reg=8448"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_7" Value="2室7区循环风机状"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_7" Value="2室7区循环风机状 data COM1/addr=7/reg=8448"/>
+                    <Text TextId="HJ3200_MOD_ID_8" Value="2室8区循环风机状"/>
+                    <Text TextId="HJ3200_MOD_NAME_8" Value="2室8区循环风机状 COM1/addr=8/reg=8448"/>
+                    <Text TextId="HJ3200_MOD_INFO_8" Value="2室8区循环风机状"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_8" Value="2室8区循环风机状"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_8" Value="2室8区循环风机状 COM1/addr=8/reg=8448"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_8" Value="2室8区循环风机状"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_8" Value="2室8区循环风机状 data COM1/addr=8/reg=8448"/>
+                    <Text TextId="HJ3200_MOD_ID_9" Value="2室1区循环运行频"/>
+                    <Text TextId="HJ3200_MOD_NAME_9" Value="2室1区循环运行频 COM1/addr=1/reg=12288"/>
+                    <Text TextId="HJ3200_MOD_INFO_9" Value="2室1区循环运行频"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_9" Value="2室1区循环运行频"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_9" Value="2室1区循环运行频 COM1/addr=1/reg=12288"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_9" Value="2室1区循环运行频"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_9" Value="2室1区循环运行频 data COM1/addr=1/reg=12288"/>
+                    <Text TextId="HJ3200_MOD_ID_10" Value="2室2区循环运行频"/>
+                    <Text TextId="HJ3200_MOD_NAME_10" Value="2室2区循环运行频 COM1/addr=2/reg=12288"/>
+                    <Text TextId="HJ3200_MOD_INFO_10" Value="2室2区循环运行频"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_10" Value="2室2区循环运行频"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_10" Value="2室2区循环运行频 COM1/addr=2/reg=12288"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_10" Value="2室2区循环运行频"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_10" Value="2室2区循环运行频 data COM1/addr=2/reg=12288"/>
+                    <Text TextId="HJ3200_MOD_ID_11" Value="2室3区循环运行频"/>
+                    <Text TextId="HJ3200_MOD_NAME_11" Value="2室3区循环运行频 COM1/addr=3/reg=12288"/>
+                    <Text TextId="HJ3200_MOD_INFO_11" Value="2室3区循环运行频"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_11" Value="2室3区循环运行频"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_11" Value="2室3区循环运行频 COM1/addr=3/reg=12288"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_11" Value="2室3区循环运行频"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_11" Value="2室3区循环运行频 data COM1/addr=3/reg=12288"/>
+                    <Text TextId="HJ3200_MOD_ID_12" Value="2室4区循环运行频"/>
+                    <Text TextId="HJ3200_MOD_NAME_12" Value="2室4区循环运行频 COM1/addr=4/reg=12288"/>
+                    <Text TextId="HJ3200_MOD_INFO_12" Value="2室4区循环运行频"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_12" Value="2室4区循环运行频"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_12" Value="2室4区循环运行频 COM1/addr=4/reg=12288"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_12" Value="2室4区循环运行频"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_12" Value="2室4区循环运行频 data COM1/addr=4/reg=12288"/>
+                    <Text TextId="HJ3200_MOD_ID_13" Value="2室5区循环运行频"/>
+                    <Text TextId="HJ3200_MOD_NAME_13" Value="2室5区循环运行频 COM1/addr=5/reg=12288"/>
+                    <Text TextId="HJ3200_MOD_INFO_13" Value="2室5区循环运行频"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_13" Value="2室5区循环运行频"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_13" Value="2室5区循环运行频 COM1/addr=5/reg=12288"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_13" Value="2室5区循环运行频"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_13" Value="2室5区循环运行频 data COM1/addr=5/reg=12288"/>
+                    <Text TextId="HJ3200_MOD_ID_14" Value="2室6区循环运行频"/>
+                    <Text TextId="HJ3200_MOD_NAME_14" Value="2室6区循环运行频 COM1/addr=6/reg=12288"/>
+                    <Text TextId="HJ3200_MOD_INFO_14" Value="2室6区循环运行频"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_14" Value="2室6区循环运行频"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_14" Value="2室6区循环运行频 COM1/addr=6/reg=12288"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_14" Value="2室6区循环运行频"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_14" Value="2室6区循环运行频 data COM1/addr=6/reg=12288"/>
+                    <Text TextId="HJ3200_MOD_ID_15" Value="2室7区循环运行频"/>
+                    <Text TextId="HJ3200_MOD_NAME_15" Value="2室7区循环运行频 COM1/addr=7/reg=12288"/>
+                    <Text TextId="HJ3200_MOD_INFO_15" Value="2室7区循环运行频"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_15" Value="2室7区循环运行频"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_15" Value="2室7区循环运行频 COM1/addr=7/reg=12288"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_15" Value="2室7区循环运行频"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_15" Value="2室7区循环运行频 data COM1/addr=7/reg=12288"/>
+                    <Text TextId="HJ3200_MOD_ID_16" Value="2室8区循环运行频"/>
+                    <Text TextId="HJ3200_MOD_NAME_16" Value="2室8区循环运行频 COM1/addr=8/reg=12288"/>
+                    <Text TextId="HJ3200_MOD_INFO_16" Value="2室8区循环运行频"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_16" Value="2室8区循环运行频"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_16" Value="2室8区循环运行频 COM1/addr=8/reg=12288"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_16" Value="2室8区循环运行频"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_16" Value="2室8区循环运行频 data COM1/addr=8/reg=12288"/>
+                    <Text TextId="HJ3200_MOD_ID_17" Value="2室1区循环运行电"/>
+                    <Text TextId="HJ3200_MOD_NAME_17" Value="2室1区循环运行电 COM1/addr=1/reg=12292"/>
+                    <Text TextId="HJ3200_MOD_INFO_17" Value="2室1区循环运行电"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_17" Value="2室1区循环运行电"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_17" Value="2室1区循环运行电 COM1/addr=1/reg=12292"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_17" Value="2室1区循环运行电"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_17" Value="2室1区循环运行电 data COM1/addr=1/reg=12292"/>
+                    <Text TextId="HJ3200_MOD_ID_18" Value="2室2区循环运行电"/>
+                    <Text TextId="HJ3200_MOD_NAME_18" Value="2室2区循环运行电 COM1/addr=2/reg=12292"/>
+                    <Text TextId="HJ3200_MOD_INFO_18" Value="2室2区循环运行电"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_18" Value="2室2区循环运行电"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_18" Value="2室2区循环运行电 COM1/addr=2/reg=12292"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_18" Value="2室2区循环运行电"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_18" Value="2室2区循环运行电 data COM1/addr=2/reg=12292"/>
+                    <Text TextId="HJ3200_MOD_ID_19" Value="2室3区循环运行电"/>
+                    <Text TextId="HJ3200_MOD_NAME_19" Value="2室3区循环运行电 COM1/addr=3/reg=12292"/>
+                    <Text TextId="HJ3200_MOD_INFO_19" Value="2室3区循环运行电"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_19" Value="2室3区循环运行电"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_19" Value="2室3区循环运行电 COM1/addr=3/reg=12292"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_19" Value="2室3区循环运行电"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_19" Value="2室3区循环运行电 data COM1/addr=3/reg=12292"/>
+                    <Text TextId="HJ3200_MOD_ID_20" Value="2室4区循环运行电"/>
+                    <Text TextId="HJ3200_MOD_NAME_20" Value="2室4区循环运行电 COM1/addr=4/reg=12292"/>
+                    <Text TextId="HJ3200_MOD_INFO_20" Value="2室4区循环运行电"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_20" Value="2室4区循环运行电"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_20" Value="2室4区循环运行电 COM1/addr=4/reg=12292"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_20" Value="2室4区循环运行电"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_20" Value="2室4区循环运行电 data COM1/addr=4/reg=12292"/>
+                    <Text TextId="HJ3200_MOD_ID_21" Value="2室5区循环运行电"/>
+                    <Text TextId="HJ3200_MOD_NAME_21" Value="2室5区循环运行电 COM1/addr=5/reg=12292"/>
+                    <Text TextId="HJ3200_MOD_INFO_21" Value="2室5区循环运行电"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_21" Value="2室5区循环运行电"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_21" Value="2室5区循环运行电 COM1/addr=5/reg=12292"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_21" Value="2室5区循环运行电"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_21" Value="2室5区循环运行电 data COM1/addr=5/reg=12292"/>
+                    <Text TextId="HJ3200_MOD_ID_22" Value="2室6区循环运行电"/>
+                    <Text TextId="HJ3200_MOD_NAME_22" Value="2室6区循环运行电 COM1/addr=6/reg=12292"/>
+                    <Text TextId="HJ3200_MOD_INFO_22" Value="2室6区循环运行电"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_22" Value="2室6区循环运行电"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_22" Value="2室6区循环运行电 COM1/addr=6/reg=12292"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_22" Value="2室6区循环运行电"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_22" Value="2室6区循环运行电 data COM1/addr=6/reg=12292"/>
+                    <Text TextId="HJ3200_MOD_ID_23" Value="2室7区循环运行电"/>
+                    <Text TextId="HJ3200_MOD_NAME_23" Value="2室7区循环运行电 COM1/addr=7/reg=12292"/>
+                    <Text TextId="HJ3200_MOD_INFO_23" Value="2室7区循环运行电"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_23" Value="2室7区循环运行电"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_23" Value="2室7区循环运行电 COM1/addr=7/reg=12292"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_23" Value="2室7区循环运行电"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_23" Value="2室7区循环运行电 data COM1/addr=7/reg=12292"/>
+                    <Text TextId="HJ3200_MOD_ID_24" Value="2室8区循环运行电"/>
+                    <Text TextId="HJ3200_MOD_NAME_24" Value="2室8区循环运行电 COM1/addr=8/reg=12292"/>
+                    <Text TextId="HJ3200_MOD_INFO_24" Value="2室8区循环运行电"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_24" Value="2室8区循环运行电"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_24" Value="2室8区循环运行电 COM1/addr=8/reg=12292"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_24" Value="2室8区循环运行电"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_24" Value="2室8区循环运行电 data COM1/addr=8/reg=12292"/>
+                    <Text TextId="HJ3200_MOD_ID_25" Value="2室1区循环设定频"/>
+                    <Text TextId="HJ3200_MOD_NAME_25" Value="2室1区循环设定频 COM1/addr=1/reg=8193"/>
+                    <Text TextId="HJ3200_MOD_INFO_25" Value="2室1区循环设定频"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_25" Value="2室1区循环设定频"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_25" Value="2室1区循环设定频 COM1/addr=1/reg=8193"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_25" Value="2室1区循环设定频"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_25" Value="2室1区循环设定频 data COM1/addr=1/reg=8193"/>
+                    <Text TextId="HJ3200_MOD_ID_26" Value="2室2区循环设定频"/>
+                    <Text TextId="HJ3200_MOD_NAME_26" Value="2室2区循环设定频 COM1/addr=2/reg=8193"/>
+                    <Text TextId="HJ3200_MOD_INFO_26" Value="2室2区循环设定频"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_26" Value="2室2区循环设定频"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_26" Value="2室2区循环设定频 COM1/addr=2/reg=8193"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_26" Value="2室2区循环设定频"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_26" Value="2室2区循环设定频 data COM1/addr=2/reg=8193"/>
+                    <Text TextId="HJ3200_MOD_ID_27" Value="2室3区循环设定频"/>
+                    <Text TextId="HJ3200_MOD_NAME_27" Value="2室3区循环设定频 COM1/addr=3/reg=8193"/>
+                    <Text TextId="HJ3200_MOD_INFO_27" Value="2室3区循环设定频"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_27" Value="2室3区循环设定频"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_27" Value="2室3区循环设定频 COM1/addr=3/reg=8193"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_27" Value="2室3区循环设定频"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_27" Value="2室3区循环设定频 data COM1/addr=3/reg=8193"/>
+                    <Text TextId="HJ3200_MOD_ID_28" Value="2室4区循环设定频"/>
+                    <Text TextId="HJ3200_MOD_NAME_28" Value="2室4区循环设定频 COM1/addr=4/reg=8193"/>
+                    <Text TextId="HJ3200_MOD_INFO_28" Value="2室4区循环设定频"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_28" Value="2室4区循环设定频"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_28" Value="2室4区循环设定频 COM1/addr=4/reg=8193"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_28" Value="2室4区循环设定频"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_28" Value="2室4区循环设定频 data COM1/addr=4/reg=8193"/>
+                    <Text TextId="HJ3200_MOD_ID_29" Value="2室5区循环设定频"/>
+                    <Text TextId="HJ3200_MOD_NAME_29" Value="2室5区循环设定频 COM1/addr=5/reg=8193"/>
+                    <Text TextId="HJ3200_MOD_INFO_29" Value="2室5区循环设定频"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_29" Value="2室5区循环设定频"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_29" Value="2室5区循环设定频 COM1/addr=5/reg=8193"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_29" Value="2室5区循环设定频"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_29" Value="2室5区循环设定频 data COM1/addr=5/reg=8193"/>
+                    <Text TextId="HJ3200_MOD_ID_30" Value="2室6区循环设定频"/>
+                    <Text TextId="HJ3200_MOD_NAME_30" Value="2室6区循环设定频 COM1/addr=6/reg=8193"/>
+                    <Text TextId="HJ3200_MOD_INFO_30" Value="2室6区循环设定频"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_30" Value="2室6区循环设定频"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_30" Value="2室6区循环设定频 COM1/addr=6/reg=8193"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_30" Value="2室6区循环设定频"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_30" Value="2室6区循环设定频 data COM1/addr=6/reg=8193"/>
+                    <Text TextId="HJ3200_MOD_ID_31" Value="2室7区循环设定频"/>
+                    <Text TextId="HJ3200_MOD_NAME_31" Value="2室7区循环设定频 COM1/addr=7/reg=8193"/>
+                    <Text TextId="HJ3200_MOD_INFO_31" Value="2室7区循环设定频"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_31" Value="2室7区循环设定频"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_31" Value="2室7区循环设定频 COM1/addr=7/reg=8193"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_31" Value="2室7区循环设定频"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_31" Value="2室7区循环设定频 data COM1/addr=7/reg=8193"/>
+                    <Text TextId="HJ3200_MOD_ID_32" Value="2室8区循环设定频"/>
+                    <Text TextId="HJ3200_MOD_NAME_32" Value="2室8区循环设定频 COM1/addr=8/reg=8193"/>
+                    <Text TextId="HJ3200_MOD_INFO_32" Value="2室8区循环设定频"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_32" Value="2室8区循环设定频"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_32" Value="2室8区循环设定频 COM1/addr=8/reg=8193"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_32" Value="2室8区循环设定频"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_32" Value="2室8区循环设定频 data COM1/addr=8/reg=8193"/>
+                    <Text TextId="HJ3200_MOD_ID_33" Value="2室供热总压力MV"/>
+                    <Text TextId="HJ3200_MOD_NAME_33" Value="2室供热总压力MV COM2/addr=1/reg=0"/>
+                    <Text TextId="HJ3200_MOD_INFO_33" Value="2室供热总压力MV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_33" Value="2室供热总压力MV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_33" Value="2室供热总压力MV COM2/addr=1/reg=0"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_33" Value="2室供热总压力MV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_33" Value="2室供热总压力MV data COM2/addr=1/reg=0"/>
+                    <Text TextId="HJ3200_MOD_ID_34" Value="2室1区温度MV"/>
+                    <Text TextId="HJ3200_MOD_NAME_34" Value="2室1区温度MV COM2/addr=2/reg=0"/>
+                    <Text TextId="HJ3200_MOD_INFO_34" Value="2室1区温度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_34" Value="2室1区温度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_34" Value="2室1区温度MV COM2/addr=2/reg=0"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_34" Value="2室1区温度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_34" Value="2室1区温度MV data COM2/addr=2/reg=0"/>
+                    <Text TextId="HJ3200_MOD_ID_35" Value="2室2区温度MV"/>
+                    <Text TextId="HJ3200_MOD_NAME_35" Value="2室2区温度MV COM2/addr=3/reg=0"/>
+                    <Text TextId="HJ3200_MOD_INFO_35" Value="2室2区温度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_35" Value="2室2区温度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_35" Value="2室2区温度MV COM2/addr=3/reg=0"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_35" Value="2室2区温度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_35" Value="2室2区温度MV data COM2/addr=3/reg=0"/>
+                    <Text TextId="HJ3200_MOD_ID_36" Value="2室3区温度MV"/>
+                    <Text TextId="HJ3200_MOD_NAME_36" Value="2室3区温度MV COM2/addr=4/reg=0"/>
+                    <Text TextId="HJ3200_MOD_INFO_36" Value="2室3区温度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_36" Value="2室3区温度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_36" Value="2室3区温度MV COM2/addr=4/reg=0"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_36" Value="2室3区温度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_36" Value="2室3区温度MV data COM2/addr=4/reg=0"/>
+                    <Text TextId="HJ3200_MOD_ID_37" Value="2室4区温度MV"/>
+                    <Text TextId="HJ3200_MOD_NAME_37" Value="2室4区温度MV COM2/addr=5/reg=0"/>
+                    <Text TextId="HJ3200_MOD_INFO_37" Value="2室4区温度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_37" Value="2室4区温度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_37" Value="2室4区温度MV COM2/addr=5/reg=0"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_37" Value="2室4区温度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_37" Value="2室4区温度MV data COM2/addr=5/reg=0"/>
+                    <Text TextId="HJ3200_MOD_ID_38" Value="2室5区温度MV"/>
+                    <Text TextId="HJ3200_MOD_NAME_38" Value="2室5区温度MV COM2/addr=6/reg=0"/>
+                    <Text TextId="HJ3200_MOD_INFO_38" Value="2室5区温度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_38" Value="2室5区温度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_38" Value="2室5区温度MV COM2/addr=6/reg=0"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_38" Value="2室5区温度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_38" Value="2室5区温度MV data COM2/addr=6/reg=0"/>
+                    <Text TextId="HJ3200_MOD_ID_39" Value="2室6区温度MV"/>
+                    <Text TextId="HJ3200_MOD_NAME_39" Value="2室6区温度MV COM2/addr=7/reg=0"/>
+                    <Text TextId="HJ3200_MOD_INFO_39" Value="2室6区温度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_39" Value="2室6区温度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_39" Value="2室6区温度MV COM2/addr=7/reg=0"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_39" Value="2室6区温度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_39" Value="2室6区温度MV data COM2/addr=7/reg=0"/>
+                    <Text TextId="HJ3200_MOD_ID_40" Value="2室7区温度MV"/>
+                    <Text TextId="HJ3200_MOD_NAME_40" Value="2室7区温度MV COM2/addr=8/reg=0"/>
+                    <Text TextId="HJ3200_MOD_INFO_40" Value="2室7区温度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_40" Value="2室7区温度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_40" Value="2室7区温度MV COM2/addr=8/reg=0"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_40" Value="2室7区温度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_40" Value="2室7区温度MV data COM2/addr=8/reg=0"/>
+                    <Text TextId="HJ3200_MOD_ID_41" Value="2室8区温度MV"/>
+                    <Text TextId="HJ3200_MOD_NAME_41" Value="2室8区温度MV COM2/addr=9/reg=0"/>
+                    <Text TextId="HJ3200_MOD_INFO_41" Value="2室8区温度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_41" Value="2室8区温度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_41" Value="2室8区温度MV COM2/addr=9/reg=0"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_41" Value="2室8区温度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_41" Value="2室8区温度MV data COM2/addr=9/reg=0"/>
+                    <Text TextId="HJ3200_MOD_ID_42" Value="2室排湿总压力MV"/>
+                    <Text TextId="HJ3200_MOD_NAME_42" Value="2室排湿总压力MV COM2/addr=10/reg=0"/>
+                    <Text TextId="HJ3200_MOD_INFO_42" Value="2室排湿总压力MV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_42" Value="2室排湿总压力MV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_42" Value="2室排湿总压力MV COM2/addr=10/reg=0"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_42" Value="2室排湿总压力MV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_42" Value="2室排湿总压力MV data COM2/addr=10/reg=0"/>
+                    <Text TextId="HJ3200_MOD_ID_43" Value="2室1区湿度MV"/>
+                    <Text TextId="HJ3200_MOD_NAME_43" Value="2室1区湿度MV COM2/addr=11/reg=0"/>
+                    <Text TextId="HJ3200_MOD_INFO_43" Value="2室1区湿度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_43" Value="2室1区湿度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_43" Value="2室1区湿度MV COM2/addr=11/reg=0"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_43" Value="2室1区湿度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_43" Value="2室1区湿度MV data COM2/addr=11/reg=0"/>
+                    <Text TextId="HJ3200_MOD_ID_44" Value="2室2区湿度MV"/>
+                    <Text TextId="HJ3200_MOD_NAME_44" Value="2室2区湿度MV COM2/addr=12/reg=0"/>
+                    <Text TextId="HJ3200_MOD_INFO_44" Value="2室2区湿度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_44" Value="2室2区湿度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_44" Value="2室2区湿度MV COM2/addr=12/reg=0"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_44" Value="2室2区湿度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_44" Value="2室2区湿度MV data COM2/addr=12/reg=0"/>
+                    <Text TextId="HJ3200_MOD_ID_45" Value="2室3区湿度MV"/>
+                    <Text TextId="HJ3200_MOD_NAME_45" Value="2室3区湿度MV COM2/addr=13/reg=0"/>
+                    <Text TextId="HJ3200_MOD_INFO_45" Value="2室3区湿度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_45" Value="2室3区湿度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_45" Value="2室3区湿度MV COM2/addr=13/reg=0"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_45" Value="2室3区湿度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_45" Value="2室3区湿度MV data COM2/addr=13/reg=0"/>
+                    <Text TextId="HJ3200_MOD_ID_46" Value="2室4区湿度MV"/>
+                    <Text TextId="HJ3200_MOD_NAME_46" Value="2室4区湿度MV COM2/addr=14/reg=0"/>
+                    <Text TextId="HJ3200_MOD_INFO_46" Value="2室4区湿度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_46" Value="2室4区湿度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_46" Value="2室4区湿度MV COM2/addr=14/reg=0"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_46" Value="2室4区湿度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_46" Value="2室4区湿度MV data COM2/addr=14/reg=0"/>
+                    <Text TextId="HJ3200_MOD_ID_47" Value="2室5区湿度MV"/>
+                    <Text TextId="HJ3200_MOD_NAME_47" Value="2室5区湿度MV COM2/addr=15/reg=0"/>
+                    <Text TextId="HJ3200_MOD_INFO_47" Value="2室5区湿度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_47" Value="2室5区湿度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_47" Value="2室5区湿度MV COM2/addr=15/reg=0"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_47" Value="2室5区湿度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_47" Value="2室5区湿度MV data COM2/addr=15/reg=0"/>
+                    <Text TextId="HJ3200_MOD_ID_48" Value="2室6区湿度MV"/>
+                    <Text TextId="HJ3200_MOD_NAME_48" Value="2室6区湿度MV COM2/addr=16/reg=0"/>
+                    <Text TextId="HJ3200_MOD_INFO_48" Value="2室6区湿度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_48" Value="2室6区湿度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_48" Value="2室6区湿度MV COM2/addr=16/reg=0"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_48" Value="2室6区湿度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_48" Value="2室6区湿度MV data COM2/addr=16/reg=0"/>
+                    <Text TextId="HJ3200_MOD_ID_49" Value="2室7区湿度MV"/>
+                    <Text TextId="HJ3200_MOD_NAME_49" Value="2室7区湿度MV COM2/addr=17/reg=0"/>
+                    <Text TextId="HJ3200_MOD_INFO_49" Value="2室7区湿度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_49" Value="2室7区湿度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_49" Value="2室7区湿度MV COM2/addr=17/reg=0"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_49" Value="2室7区湿度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_49" Value="2室7区湿度MV data COM2/addr=17/reg=0"/>
+                    <Text TextId="HJ3200_MOD_ID_50" Value="2室8区湿度MV"/>
+                    <Text TextId="HJ3200_MOD_NAME_50" Value="2室8区湿度MV COM2/addr=18/reg=0"/>
+                    <Text TextId="HJ3200_MOD_INFO_50" Value="2室8区湿度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_50" Value="2室8区湿度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_50" Value="2室8区湿度MV COM2/addr=18/reg=0"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_50" Value="2室8区湿度MV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_50" Value="2室8区湿度MV data COM2/addr=18/reg=0"/>
+                    <Text TextId="HJ3200_MOD_ID_51" Value="2室供热总压力PV"/>
+                    <Text TextId="HJ3200_MOD_NAME_51" Value="2室供热总压力PV COM2/addr=1/reg=2"/>
+                    <Text TextId="HJ3200_MOD_INFO_51" Value="2室供热总压力PV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_51" Value="2室供热总压力PV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_51" Value="2室供热总压力PV COM2/addr=1/reg=2"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_51" Value="2室供热总压力PV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_51" Value="2室供热总压力PV data COM2/addr=1/reg=2"/>
+                    <Text TextId="HJ3200_MOD_ID_52" Value="2室1区温度PV"/>
+                    <Text TextId="HJ3200_MOD_NAME_52" Value="2室1区温度PV COM2/addr=2/reg=2"/>
+                    <Text TextId="HJ3200_MOD_INFO_52" Value="2室1区温度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_52" Value="2室1区温度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_52" Value="2室1区温度PV COM2/addr=2/reg=2"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_52" Value="2室1区温度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_52" Value="2室1区温度PV data COM2/addr=2/reg=2"/>
+                    <Text TextId="HJ3200_MOD_ID_53" Value="2室2区温度PV"/>
+                    <Text TextId="HJ3200_MOD_NAME_53" Value="2室2区温度PV COM2/addr=3/reg=2"/>
+                    <Text TextId="HJ3200_MOD_INFO_53" Value="2室2区温度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_53" Value="2室2区温度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_53" Value="2室2区温度PV COM2/addr=3/reg=2"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_53" Value="2室2区温度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_53" Value="2室2区温度PV data COM2/addr=3/reg=2"/>
+                    <Text TextId="HJ3200_MOD_ID_54" Value="2室3区温度PV"/>
+                    <Text TextId="HJ3200_MOD_NAME_54" Value="2室3区温度PV COM2/addr=4/reg=2"/>
+                    <Text TextId="HJ3200_MOD_INFO_54" Value="2室3区温度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_54" Value="2室3区温度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_54" Value="2室3区温度PV COM2/addr=4/reg=2"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_54" Value="2室3区温度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_54" Value="2室3区温度PV data COM2/addr=4/reg=2"/>
+                    <Text TextId="HJ3200_MOD_ID_55" Value="2室4区温度PV"/>
+                    <Text TextId="HJ3200_MOD_NAME_55" Value="2室4区温度PV COM2/addr=5/reg=2"/>
+                    <Text TextId="HJ3200_MOD_INFO_55" Value="2室4区温度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_55" Value="2室4区温度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_55" Value="2室4区温度PV COM2/addr=5/reg=2"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_55" Value="2室4区温度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_55" Value="2室4区温度PV data COM2/addr=5/reg=2"/>
+                    <Text TextId="HJ3200_MOD_ID_56" Value="2室5区温度PV"/>
+                    <Text TextId="HJ3200_MOD_NAME_56" Value="2室5区温度PV COM2/addr=6/reg=2"/>
+                    <Text TextId="HJ3200_MOD_INFO_56" Value="2室5区温度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_56" Value="2室5区温度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_56" Value="2室5区温度PV COM2/addr=6/reg=2"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_56" Value="2室5区温度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_56" Value="2室5区温度PV data COM2/addr=6/reg=2"/>
+                    <Text TextId="HJ3200_MOD_ID_57" Value="2室6区温度PV"/>
+                    <Text TextId="HJ3200_MOD_NAME_57" Value="2室6区温度PV COM2/addr=7/reg=2"/>
+                    <Text TextId="HJ3200_MOD_INFO_57" Value="2室6区温度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_57" Value="2室6区温度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_57" Value="2室6区温度PV COM2/addr=7/reg=2"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_57" Value="2室6区温度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_57" Value="2室6区温度PV data COM2/addr=7/reg=2"/>
+                    <Text TextId="HJ3200_MOD_ID_58" Value="2室7区温度PV"/>
+                    <Text TextId="HJ3200_MOD_NAME_58" Value="2室7区温度PV COM2/addr=8/reg=2"/>
+                    <Text TextId="HJ3200_MOD_INFO_58" Value="2室7区温度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_58" Value="2室7区温度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_58" Value="2室7区温度PV COM2/addr=8/reg=2"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_58" Value="2室7区温度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_58" Value="2室7区温度PV data COM2/addr=8/reg=2"/>
+                    <Text TextId="HJ3200_MOD_ID_59" Value="2室8区温度PV"/>
+                    <Text TextId="HJ3200_MOD_NAME_59" Value="2室8区温度PV COM2/addr=9/reg=2"/>
+                    <Text TextId="HJ3200_MOD_INFO_59" Value="2室8区温度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_59" Value="2室8区温度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_59" Value="2室8区温度PV COM2/addr=9/reg=2"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_59" Value="2室8区温度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_59" Value="2室8区温度PV data COM2/addr=9/reg=2"/>
+                    <Text TextId="HJ3200_MOD_ID_60" Value="2室排湿总压力PV"/>
+                    <Text TextId="HJ3200_MOD_NAME_60" Value="2室排湿总压力PV COM2/addr=10/reg=2"/>
+                    <Text TextId="HJ3200_MOD_INFO_60" Value="2室排湿总压力PV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_60" Value="2室排湿总压力PV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_60" Value="2室排湿总压力PV COM2/addr=10/reg=2"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_60" Value="2室排湿总压力PV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_60" Value="2室排湿总压力PV data COM2/addr=10/reg=2"/>
+                    <Text TextId="HJ3200_MOD_ID_61" Value="2室1区湿度PV"/>
+                    <Text TextId="HJ3200_MOD_NAME_61" Value="2室1区湿度PV COM2/addr=11/reg=2"/>
+                    <Text TextId="HJ3200_MOD_INFO_61" Value="2室1区湿度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_61" Value="2室1区湿度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_61" Value="2室1区湿度PV COM2/addr=11/reg=2"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_61" Value="2室1区湿度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_61" Value="2室1区湿度PV data COM2/addr=11/reg=2"/>
+                    <Text TextId="HJ3200_MOD_ID_62" Value="2室2区湿度PV"/>
+                    <Text TextId="HJ3200_MOD_NAME_62" Value="2室2区湿度PV COM2/addr=12/reg=2"/>
+                    <Text TextId="HJ3200_MOD_INFO_62" Value="2室2区湿度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_62" Value="2室2区湿度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_62" Value="2室2区湿度PV COM2/addr=12/reg=2"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_62" Value="2室2区湿度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_62" Value="2室2区湿度PV data COM2/addr=12/reg=2"/>
+                    <Text TextId="HJ3200_MOD_ID_63" Value="2室3区湿度PV"/>
+                    <Text TextId="HJ3200_MOD_NAME_63" Value="2室3区湿度PV COM2/addr=13/reg=2"/>
+                    <Text TextId="HJ3200_MOD_INFO_63" Value="2室3区湿度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_63" Value="2室3区湿度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_63" Value="2室3区湿度PV COM2/addr=13/reg=2"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_63" Value="2室3区湿度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_63" Value="2室3区湿度PV data COM2/addr=13/reg=2"/>
+                    <Text TextId="HJ3200_MOD_ID_64" Value="2室4区湿度PV"/>
+                    <Text TextId="HJ3200_MOD_NAME_64" Value="2室4区湿度PV COM2/addr=14/reg=2"/>
+                    <Text TextId="HJ3200_MOD_INFO_64" Value="2室4区湿度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_64" Value="2室4区湿度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_64" Value="2室4区湿度PV COM2/addr=14/reg=2"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_64" Value="2室4区湿度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_64" Value="2室4区湿度PV data COM2/addr=14/reg=2"/>
+                    <Text TextId="HJ3200_MOD_ID_65" Value="2室5区湿度PV"/>
+                    <Text TextId="HJ3200_MOD_NAME_65" Value="2室5区湿度PV COM2/addr=15/reg=2"/>
+                    <Text TextId="HJ3200_MOD_INFO_65" Value="2室5区湿度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_65" Value="2室5区湿度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_65" Value="2室5区湿度PV COM2/addr=15/reg=2"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_65" Value="2室5区湿度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_65" Value="2室5区湿度PV data COM2/addr=15/reg=2"/>
+                    <Text TextId="HJ3200_MOD_ID_66" Value="2室6区湿度PV"/>
+                    <Text TextId="HJ3200_MOD_NAME_66" Value="2室6区湿度PV COM2/addr=16/reg=2"/>
+                    <Text TextId="HJ3200_MOD_INFO_66" Value="2室6区湿度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_66" Value="2室6区湿度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_66" Value="2室6区湿度PV COM2/addr=16/reg=2"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_66" Value="2室6区湿度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_66" Value="2室6区湿度PV data COM2/addr=16/reg=2"/>
+                    <Text TextId="HJ3200_MOD_ID_67" Value="2室7区湿度PV"/>
+                    <Text TextId="HJ3200_MOD_NAME_67" Value="2室7区湿度PV COM2/addr=17/reg=2"/>
+                    <Text TextId="HJ3200_MOD_INFO_67" Value="2室7区湿度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_67" Value="2室7区湿度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_67" Value="2室7区湿度PV COM2/addr=17/reg=2"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_67" Value="2室7区湿度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_67" Value="2室7区湿度PV data COM2/addr=17/reg=2"/>
+                    <Text TextId="HJ3200_MOD_ID_68" Value="2室8区湿度PV"/>
+                    <Text TextId="HJ3200_MOD_NAME_68" Value="2室8区湿度PV COM2/addr=18/reg=2"/>
+                    <Text TextId="HJ3200_MOD_INFO_68" Value="2室8区湿度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_68" Value="2室8区湿度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_68" Value="2室8区湿度PV COM2/addr=18/reg=2"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_68" Value="2室8区湿度PV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_68" Value="2室8区湿度PV data COM2/addr=18/reg=2"/>
+                    <Text TextId="HJ3200_MOD_ID_69" Value="2室供热总压力SV"/>
+                    <Text TextId="HJ3200_MOD_NAME_69" Value="2室供热总压力SV COM2/addr=1/reg=4"/>
+                    <Text TextId="HJ3200_MOD_INFO_69" Value="2室供热总压力SV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_69" Value="2室供热总压力SV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_69" Value="2室供热总压力SV COM2/addr=1/reg=4"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_69" Value="2室供热总压力SV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_69" Value="2室供热总压力SV data COM2/addr=1/reg=4"/>
+                    <Text TextId="HJ3200_MOD_ID_70" Value="2室1区温度SV"/>
+                    <Text TextId="HJ3200_MOD_NAME_70" Value="2室1区温度SV COM2/addr=2/reg=4"/>
+                    <Text TextId="HJ3200_MOD_INFO_70" Value="2室1区温度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_70" Value="2室1区温度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_70" Value="2室1区温度SV COM2/addr=2/reg=4"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_70" Value="2室1区温度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_70" Value="2室1区温度SV data COM2/addr=2/reg=4"/>
+                    <Text TextId="HJ3200_MOD_ID_71" Value="2室2区温度SV"/>
+                    <Text TextId="HJ3200_MOD_NAME_71" Value="2室2区温度SV COM2/addr=3/reg=4"/>
+                    <Text TextId="HJ3200_MOD_INFO_71" Value="2室2区温度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_71" Value="2室2区温度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_71" Value="2室2区温度SV COM2/addr=3/reg=4"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_71" Value="2室2区温度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_71" Value="2室2区温度SV data COM2/addr=3/reg=4"/>
+                    <Text TextId="HJ3200_MOD_ID_72" Value="2室3区温度SV"/>
+                    <Text TextId="HJ3200_MOD_NAME_72" Value="2室3区温度SV COM2/addr=4/reg=4"/>
+                    <Text TextId="HJ3200_MOD_INFO_72" Value="2室3区温度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_72" Value="2室3区温度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_72" Value="2室3区温度SV COM2/addr=4/reg=4"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_72" Value="2室3区温度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_72" Value="2室3区温度SV data COM2/addr=4/reg=4"/>
+                    <Text TextId="HJ3200_MOD_ID_73" Value="2室4区温度SV"/>
+                    <Text TextId="HJ3200_MOD_NAME_73" Value="2室4区温度SV COM2/addr=5/reg=4"/>
+                    <Text TextId="HJ3200_MOD_INFO_73" Value="2室4区温度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_73" Value="2室4区温度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_73" Value="2室4区温度SV COM2/addr=5/reg=4"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_73" Value="2室4区温度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_73" Value="2室4区温度SV data COM2/addr=5/reg=4"/>
+                    <Text TextId="HJ3200_MOD_ID_74" Value="2室5区温度SV"/>
+                    <Text TextId="HJ3200_MOD_NAME_74" Value="2室5区温度SV COM2/addr=6/reg=4"/>
+                    <Text TextId="HJ3200_MOD_INFO_74" Value="2室5区温度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_74" Value="2室5区温度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_74" Value="2室5区温度SV COM2/addr=6/reg=4"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_74" Value="2室5区温度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_74" Value="2室5区温度SV data COM2/addr=6/reg=4"/>
+                    <Text TextId="HJ3200_MOD_ID_75" Value="2室6区温度SV"/>
+                    <Text TextId="HJ3200_MOD_NAME_75" Value="2室6区温度SV COM2/addr=7/reg=4"/>
+                    <Text TextId="HJ3200_MOD_INFO_75" Value="2室6区温度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_75" Value="2室6区温度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_75" Value="2室6区温度SV COM2/addr=7/reg=4"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_75" Value="2室6区温度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_75" Value="2室6区温度SV data COM2/addr=7/reg=4"/>
+                    <Text TextId="HJ3200_MOD_ID_76" Value="2室7区温度SV"/>
+                    <Text TextId="HJ3200_MOD_NAME_76" Value="2室7区温度SV COM2/addr=8/reg=4"/>
+                    <Text TextId="HJ3200_MOD_INFO_76" Value="2室7区温度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_76" Value="2室7区温度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_76" Value="2室7区温度SV COM2/addr=8/reg=4"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_76" Value="2室7区温度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_76" Value="2室7区温度SV data COM2/addr=8/reg=4"/>
+                    <Text TextId="HJ3200_MOD_ID_77" Value="2室8区温度SV"/>
+                    <Text TextId="HJ3200_MOD_NAME_77" Value="2室8区温度SV COM2/addr=9/reg=4"/>
+                    <Text TextId="HJ3200_MOD_INFO_77" Value="2室8区温度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_77" Value="2室8区温度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_77" Value="2室8区温度SV COM2/addr=9/reg=4"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_77" Value="2室8区温度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_77" Value="2室8区温度SV data COM2/addr=9/reg=4"/>
+                    <Text TextId="HJ3200_MOD_ID_78" Value="2室排湿总压力SV"/>
+                    <Text TextId="HJ3200_MOD_NAME_78" Value="2室排湿总压力SV COM2/addr=10/reg=4"/>
+                    <Text TextId="HJ3200_MOD_INFO_78" Value="2室排湿总压力SV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_78" Value="2室排湿总压力SV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_78" Value="2室排湿总压力SV COM2/addr=10/reg=4"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_78" Value="2室排湿总压力SV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_78" Value="2室排湿总压力SV data COM2/addr=10/reg=4"/>
+                    <Text TextId="HJ3200_MOD_ID_79" Value="2室1区湿度SV"/>
+                    <Text TextId="HJ3200_MOD_NAME_79" Value="2室1区湿度SV COM2/addr=11/reg=4"/>
+                    <Text TextId="HJ3200_MOD_INFO_79" Value="2室1区湿度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_79" Value="2室1区湿度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_79" Value="2室1区湿度SV COM2/addr=11/reg=4"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_79" Value="2室1区湿度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_79" Value="2室1区湿度SV data COM2/addr=11/reg=4"/>
+                    <Text TextId="HJ3200_MOD_ID_80" Value="2室2区湿度SV"/>
+                    <Text TextId="HJ3200_MOD_NAME_80" Value="2室2区湿度SV COM2/addr=12/reg=4"/>
+                    <Text TextId="HJ3200_MOD_INFO_80" Value="2室2区湿度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_80" Value="2室2区湿度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_80" Value="2室2区湿度SV COM2/addr=12/reg=4"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_80" Value="2室2区湿度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_80" Value="2室2区湿度SV data COM2/addr=12/reg=4"/>
+                    <Text TextId="HJ3200_MOD_ID_81" Value="2室3区湿度SV"/>
+                    <Text TextId="HJ3200_MOD_NAME_81" Value="2室3区湿度SV COM2/addr=13/reg=4"/>
+                    <Text TextId="HJ3200_MOD_INFO_81" Value="2室3区湿度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_81" Value="2室3区湿度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_81" Value="2室3区湿度SV COM2/addr=13/reg=4"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_81" Value="2室3区湿度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_81" Value="2室3区湿度SV data COM2/addr=13/reg=4"/>
+                    <Text TextId="HJ3200_MOD_ID_82" Value="2室4区湿度SV"/>
+                    <Text TextId="HJ3200_MOD_NAME_82" Value="2室4区湿度SV COM2/addr=14/reg=4"/>
+                    <Text TextId="HJ3200_MOD_INFO_82" Value="2室4区湿度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_82" Value="2室4区湿度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_82" Value="2室4区湿度SV COM2/addr=14/reg=4"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_82" Value="2室4区湿度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_82" Value="2室4区湿度SV data COM2/addr=14/reg=4"/>
+                    <Text TextId="HJ3200_MOD_ID_83" Value="2室5区湿度SV"/>
+                    <Text TextId="HJ3200_MOD_NAME_83" Value="2室5区湿度SV COM2/addr=15/reg=4"/>
+                    <Text TextId="HJ3200_MOD_INFO_83" Value="2室5区湿度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_83" Value="2室5区湿度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_83" Value="2室5区湿度SV COM2/addr=15/reg=4"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_83" Value="2室5区湿度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_83" Value="2室5区湿度SV data COM2/addr=15/reg=4"/>
+                    <Text TextId="HJ3200_MOD_ID_84" Value="2室6区湿度SV"/>
+                    <Text TextId="HJ3200_MOD_NAME_84" Value="2室6区湿度SV COM2/addr=16/reg=4"/>
+                    <Text TextId="HJ3200_MOD_INFO_84" Value="2室6区湿度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_84" Value="2室6区湿度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_84" Value="2室6区湿度SV COM2/addr=16/reg=4"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_84" Value="2室6区湿度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_84" Value="2室6区湿度SV data COM2/addr=16/reg=4"/>
+                    <Text TextId="HJ3200_MOD_ID_85" Value="2室7区湿度SV"/>
+                    <Text TextId="HJ3200_MOD_NAME_85" Value="2室7区湿度SV COM2/addr=17/reg=4"/>
+                    <Text TextId="HJ3200_MOD_INFO_85" Value="2室7区湿度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_85" Value="2室7区湿度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_85" Value="2室7区湿度SV COM2/addr=17/reg=4"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_85" Value="2室7区湿度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_85" Value="2室7区湿度SV data COM2/addr=17/reg=4"/>
+                    <Text TextId="HJ3200_MOD_ID_86" Value="2室8区湿度SV"/>
+                    <Text TextId="HJ3200_MOD_NAME_86" Value="2室8区湿度SV COM2/addr=18/reg=4"/>
+                    <Text TextId="HJ3200_MOD_INFO_86" Value="2室8区湿度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_ID_86" Value="2室8区湿度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_NAME_86" Value="2室8区湿度SV COM2/addr=18/reg=4"/>
+                    <Text TextId="HJ3200_SUBMOD_INFO_86" Value="2室8区湿度SV"/>
+                    <Text TextId="HJ3200_SUBMOD_DATA_86" Value="2室8区湿度SV data COM2/addr=18/reg=4"/>
+                    <Text TextId="HJ3200_ALARM_ID" Value="Alarm Data Module"/>
+                    <Text TextId="HJ3200_ALARM_NAME" Value="Alarm Data Module"/>
+                    <Text TextId="HJ3200_ALARM_INFO" Value="Alarm Data Module"/>
+                    <Text TextId="HJ3200_SUB_ALARM_ID" Value="Alarm Data SubModule"/>
+                    <Text TextId="HJ3200_SUB_ALARM_NAME" Value="Alarm Data SubModule"/>
+                    <Text TextId="HJ3200_SUB_ALARM_INFO" Value="Alarm Data SubModule"/>
+                    <Text TextId="HJ3200_SUB_ALARM_DATA" Value="Alarm Data SubModule"/>
+                    <Text TextId="HJXXX_IO_MOD" Value="IOModule"/>
+                </PrimaryLanguage>
+            </ExternalTextList>
+        </ApplicationProcess>
+    </ProfileBody>
+</ISO15745Profile>
